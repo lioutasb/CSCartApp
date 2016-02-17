@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<notices>
+    <notice>
+        <name>Google Gson</name>
+        <url>https://github.com/google/gson/</url>
+        <copyright>Copyright 2008 Google Inc.</copyright>
+        <license>Apache Software License 2.0</license>
+    </notice>
+    <notice>
+        <name>CircularImageView</name>
+        <url>https://github.com/Pkmmte/CircularImageView</url>
+        <copyright>Copyright (c) 2014 Pkmmte Xeleon</copyright>
+        <license>MIT License</license>
+    </notice>
+    <notice>
+        <name>Android ViewPagerIndicator</name>
+        <url>http://viewpagerindicator.com/</url>
+        <copyright>Copyright (C) 2011 The Android Open Source Project&lt;br/&gt;Copyright (C) 2012 Jake Wharton</copyright>
+        <license>Apache Software License 2.0</license>
+    </notice>
+    <notice>
+        <name>ErrorView</name>
+        <url>https://github.com/xiprox/ErrorView/</url>
+        <copyright>Copyright (C) 2015 Ihsan Isik</copyright>
+        <license>Apache Software License 2.0</license>
+    </notice>
+    <notice>
+        <name>OkHttp</name>
+        <url>http://square.github.io/okhttp/</url>
+        <copyright>Copyright 2014 Square, Inc.</copyright>
+        <license>Apache Software License 2.0</license>
+    </notice>
+    <notice>
+        <name>AutoFitTextView</name>
+        <url>https://github.com/grantland/android-autofittextview</url>
+        <copyright>Copyright 2014 Grantland Chew</copyright>
+        <license>Apache Software License 2.0</license>
+    </notice>
+    <notice>
+        <name>Android-Bootstrap</name>
+        <url>https://github.com/Bearded-Hen/Android-Bootstrap</url>
+        <copyright>Copyright (c) 2013 Bearded Hen</copyright>
+        <license>MIT License</license>
+    </notice>
+    <notice>
+        <name>Apache Commons IO</name>
+        <url>http://commons.apache.org/io/</url>
+        <copyright>Copyright 2002-2012 The Apache Software Foundation</copyright>
+        <license>Apache Software License 2.0</license>
+    </notice>
+    <notice>
+        <name>Apache Commons Lang</name>
+        <url>http://commons.apache.org/lang/</url>
+        <copyright>Copyright 2002-2011 The Apache Software Foundation</copyright>
+        <license>Apache Software License 2.0</license>
+    </notice>
+    <notice>
+        <name>Progress Wheel</name>
+        <url>https://github.com/JohnPersano/SuperToasts/</url>
+        <copyright>Copyright (c) 2015 Todd Davies</copyright>
+        <license>MIT License</license>
+    </notice>
+    <notice>
+        <name>Sweet Alert Dialog</name>
+        <url>https://github.com/pedant/sweet-alert-dialog</url>
+        <copyright>Copyright (c) 2014 Pedant(http://pedant.cn)</copyright>
+        <license>MIT License</license>
+    </notice>
+    <notice>
+        <name>Google Guava</name>
+        <url>http://code.google.com/p/guava-libraries/</url>
+        <copyright>Copyright (C) 2007 The Guava Authors</copyright>
+        <license>Apache Software License 2.0</license>
+    </notice>
+    <notice>
+        <name>AppIntro</name>
+        <url>https://github.com/PaoloRotolo/AppIntro</url>
+        <copyright/>
+        <license>Apache Software License 2.0</license>
+    </notice>
+    <notice>
+        <name>Blur Navigation Drawer Library</name>
+        <url>https://github.com/charbgr/BlurNavigationDrawer</url>
+        <copyright/>
+        <license>Apache Software License 2.0</license>
+    </notice>
+    <notice>
+        <name>QuickReturn</name>
+        <url>https://github.com/lawloretienne/QuickReturn</url>
+        <copyright>Copyright 2014 Etienne Lawlor</copyright>
+        <license>Apache Software License 2.0</license>
+    </notice>
+    <notice>
+        <name>FloatingActionButton</name>
+        <url>https://github.com/makovkastar/FloatingActionButton</url>
+        <copyright>Copyright (c) 2014 Oleksandr Melnykov</copyright>
+        <license>MIT License</license>
+    </notice>
+    <notice>
+        <name>LabelView</name>
+        <url>https://github.com/linger1216/labelview</url>
+        <copyright>Copyright (C) 2014 linger1216</copyright>
+        <license>Apache Software License 2.0</license>
+    </notice>
+    <notice>
+        <name>Android ViewPagerIndicator</name>
+        <url>https://github.com/JakeWharton/ViewPagerIndicator</url>
+        <copyright>Copyright 2012 Jake Wharton&lt;br/&gt;Copyright 2011 Patrik Åkerfeldt&lt;br/&gt;Copyright 2011 Francisco Figueiredo Jr.</copyright>
+        <license>Apache Software License 2.0</license>
+    </notice>
+</notices>

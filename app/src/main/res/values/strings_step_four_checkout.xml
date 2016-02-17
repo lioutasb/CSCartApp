@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="step_four_screen_title">Βήμα 4 - Επισκόπηση</string>
+    <string name="step_four_edit_addr_txt">Τροποποίηση</string>
+    <string name="step_four_coupon_title">Έχετε Εκπτωτικό Κωδικό;</string>
+    <string name="step_four_coupon_btn">Εφαρμογή</string>
+    <string name="step_four_coupon_hint">Κωδικός Έκπτωσης</string>
+    <string name="step_four_terms_txt">Για να προχωρήσετε επιλέξτε αυτό το πλαίσιο ελέγχου για να αποδεχτείτε τους όρους χρήσης.</string>
+    <string name="step_four_done_btn">Ολοκλήρωση Παραγγελίας</string>
+    <string name="step_four_terms_fail_txt">Για να προχωρήσετε, θα πρέπει να αποδεχτείτε τους Όρους και Προϋποθέσεις μας</string>
+    <string name="step_four_done_msg">Η παραγγελία καταχωρήθηκε επιτυχώς</string>
+</resources>

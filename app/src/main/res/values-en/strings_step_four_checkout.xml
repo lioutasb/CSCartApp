@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="step_four_screen_title">Step 4 - Summary</string>
+    <string name="step_four_edit_addr_txt">Edit</string>
+    <string name="step_four_coupon_title">Do you have a coupon code?</string>
+    <string name="step_four_coupon_btn">Calculate</string>
+    <string name="step_four_coupon_hint">Coupon Code</string>
+    <string name="step_four_terms_txt">Select this check box to accept the Terms and Conditions.</string>
+    <string name="step_four_done_btn">Submit My Order</string>
+    <string name="step_four_terms_fail_txt">In order to proceed, you need to accept our Terms and Conditions.</string>
+    <string name="step_four_done_msg">Your order has been submitted successfully</string>
+</resources>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ProgressWheel="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_listrow_products"
+    android:padding="8dp" >
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/thumbnailLay">
+	    <ImageView
+	        android:id="@+id/thumbnail"
+	        android:layout_width="110dp"
+	        android:layout_height="110dp"
+	        android:layout_alignParentLeft="true"
+	        android:layout_marginRight="8dp" />
+
+        <com.todddavies.components.progressbar.ProgressWheel
+            android:id="@+id/progressBarImgProdcuts"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            ProgressWheel:rimColor="#330097D6"
+            ProgressWheel:barColor="#0097D6"
+            ProgressWheel:barLength="3dp"
+            ProgressWheel:barWidth="1dp"
+            ProgressWheel:rimWidth="1dp"
+            ProgressWheel:contourColor="#330097D6"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/titleProd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/thumbnailLay"
+        android:layout_toRightOf="@+id/thumbnailLay"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:text="asasdasdadasd"/>
+
+    <RelativeLayout
+        android:id="@+id/priceLay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleProd"
+        android:layout_toRightOf="@+id/thumbnailLay">
+        <TextView
+            android:id="@+id/orinPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dip"
+            android:textColor="@color/red"
+            android:textSize="18sp"
+            android:text="asasdasdadasd"/>
+
+        <TextView
+            android:id="@+id/retPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/orinPrice"
+            android:layout_alignBottom="@+id/orinPrice"
+            android:paddingBottom="1dp"
+            android:textColor="@color/grey_font"
+            android:textSize="16sp"
+            android:text="asasdasdadasd"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/discount"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:text="-30%"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/bg_circle_orange"
+        android:gravity="center_vertical|center_horizontal"/>
+
+    <TextView
+        android:id="@+id/freeshipText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/priceLay"
+        android:layout_marginTop="1dip"
+        android:layout_toRightOf="@+id/thumbnailLay"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:text="asasdasdadasd"/>
+ 
+</RelativeLayout>

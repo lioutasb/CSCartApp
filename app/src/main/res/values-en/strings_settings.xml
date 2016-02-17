@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="settings_screen_name">Settings</string>
+    <string name="settings_langs_title">Languages</string>
+    <string name="settings_curr_name">Currency</string>
+
+    <string name="settings_general_group_name">General</string>
+    <string name="settings_help_group_name">Help</string>
+
+    <string name="settings_lang_item_name">Language</string>
+    <string name="settings_currency_item_name">Currency</string>
+    <string name="settings_about_item_name">About</string>
+    <string name="settings_intro_item_name">Start Screen</string>
+    <string name="settings_intro_item_desc">See again start screen of app</string>
+    <string name="settings_search_history_item_name">Clear Search History</string>
+    <string name="settings_search_history_item_desc">Clear previous stored search history</string>
+
+    <string name="settings_clear_history_msg">Clear search history successful.</string>
+
+    <string name="settings_feedback_item_name">Send feedback</string>
+    <string name="settings_feedback_item_desc">Tell us what you like or not about the app</string>
+    <string name="settings_openlibs_item_name">Open Source Libraries</string>
+
+    <string name="settings_about_version">Version</string>
+    <string name="settings_about_developed_by">Developed by</string>
+    <string name="settings_about_developed_for">on behalf of\nPlushost.gr\n(eCommerce Development Company)</string>
+</resources>

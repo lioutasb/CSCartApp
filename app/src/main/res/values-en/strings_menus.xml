@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="menu_cart_refresh">Refresh</string>
+    <string name="menu_cart_empty">Empty Cart</string>
+
+    <string name="menu_cart_item_qty">Change Quantity</string>
+    <string name="menu_cart_item_remove">Remove</string>
+
+    <string name="menu_cart_name">Cart</string>
+    <string name="menu_share_name">Share</string>
+    <string name="menu_search_name">Search</string>
+    <string name="menu_settings_name">Settings</string>
+
+    <string name="menu_compare_name">COMPARE</string>
+
+</resources>

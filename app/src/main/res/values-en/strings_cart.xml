@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cart_screen_name">Cart</string>
+    <string name="cart_count_products_msg">%d products in cart</string>
+    <string name="cart_count_product_msg">%d product in cart</string>
+
+    <string name="cart_product_code">Product code: %s</string>
+    <string name="cart_unit_price">Unit price: %s</string>
+    <string name="cart_qty">Quantity: %s</string>
+    <string name="cart_total_price">Total price: %s</string>
+
+    <string name="cart_btn_checkout">Proceed to checkout</string>
+    <string name="cart_empty_cart">Your shopping cart is empty</string>
+
+</resources>

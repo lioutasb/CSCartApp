@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="orders_screen_title">Παραγγελίες</string>
+    <string name="orders_no_orders">Δεν βρέθηκαν παραγγελίες</string>
+
+    <string name="orders_search_title">Επιλογές αναζήτησης</string>
+    <string name="orders_search_total">Σύνολο (%s)</string>
+    <string name="orders_search_total_from">Από</string>
+    <string name="orders_search_total_to">Μέχρι</string>
+    <string name="orders_search_status">Εξέλιξη Παραγγελίας</string>
+    <string name="orders_search_id">ID Παραγγελίας</string>
+    <string name="orders_search_id_ex">π.χ. 98</string>
+    <string name="orders_search_btn">Αναζήτηση</string>
+    <string name="orders_total_price">Σύνολο: %s</string>
+    <string formatted="false" name="orders_title">ΠΑΡΑΓΓΕΛΙΑ %s\n(%s)</string>
+</resources>

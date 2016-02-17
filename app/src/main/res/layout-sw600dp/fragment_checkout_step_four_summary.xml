@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/tone_of_white">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/content_frame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:id="@+id/customerInfoRel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/customerInfoTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:text="@string/order_customer_info"
+                    android:textStyle="bold"
+                    android:textSize="20sp"/>
+
+                <gr.plushost.prototypeapp.widgets.UnderlinedTextView
+                    android:id="@+id/editAddrTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/step_four_edit_addr_txt"
+                    android:textStyle="bold"
+                    android:textColor="#3333CC"
+                    android:textSize="18sp"
+                    android:layout_toRightOf="@+id/customerInfoTitle"
+                    android:layout_marginLeft="10dp"
+                    android:layout_alignParentBottom="true"
+                    android:clickable="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/customerInfoBody"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangle"
+                android:layout_below="@+id/customerInfoRel"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/s_address_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/order_shipping_info"
+                    android:textStyle="italic|bold"/>
+
+                <TextView
+                    android:id="@+id/s_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/s_address_title"
+                    android:textSize="13sp"/>
+
+                <TextView
+                    android:id="@+id/s_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/s_name"
+                    android:textSize="13sp"/>
+
+                <TextView
+                    android:id="@+id/s_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/s_email"
+                    android:textSize="13sp"/>
+
+                <TextView
+                    android:id="@+id/s_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/s_phone"
+                    android:textSize="13sp"/>
+
+                <TextView
+                    android:id="@+id/s_city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/s_address"
+                    android:textSize="13sp"/>
+
+                <TextView
+                    android:id="@+id/s_country"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/s_city"
+                    android:textSize="13sp"/>
+
+                <TextView
+                    android:id="@+id/s_region"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/s_country"
+                    android:textSize="13sp"/>
+
+                <TextView
+                    android:id="@+id/s_zipcode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/s_region"
+                    android:textSize="13sp"/>
+
+                <TextView
+                    android:id="@+id/b_address_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:text="@string/order_billing_info"
+                    android:layout_below="@+id/s_zipcode"
+                    android:textStyle="italic|bold"/>
+
+                <TextView
+                    android:id="@+id/b_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/b_address_title"
+                    android:textSize="13sp"/>
+
+                <TextView
+                    android:id="@+id/b_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/b_name"
+                    android:textSize="13sp"/>
+
+                <TextView
+                    android:id="@+id/b_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/b_email"
+                    android:textSize="13sp"/>
+
+                <TextView
+                    android:id="@+id/b_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/b_phone"
+                    android:textSize="13sp"/>
+
+                <TextView
+                    android:id="@+id/b_city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/b_address"
+                    android:textSize="13sp"/>
+
+                <TextView
+                    android:id="@+id/b_country"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/b_city"
+                    android:textSize="13sp"/>
+
+                <TextView
+                    android:id="@+id/b_region"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/b_country"
+                    android:textSize="13sp"/>
+
+                <TextView
+                    android:id="@+id/b_zipcode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/b_region"
+                    android:textSize="13sp"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/productsListTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:text="@string/order_products_info"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_below="@+id/customerInfoBody"/>
+
+            <FrameLayout
+                android:id="@+id/productsListBody"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/productsListTitle"
+                android:background="@drawable/rectangle">
+
+                <gr.plushost.prototypeapp.widgets.NestedListView
+                    android:id="@+id/productListView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:cacheColorHint="#00000000"
+                    android:listSelector="@android:color/transparent"/>
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/commentsTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:text="@string/order_comments_info"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_below="@+id/productsListBody"/>
+
+            <FrameLayout
+                android:id="@+id/commentsBody"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangle"
+                android:layout_below="@+id/commentsTitle"
+                android:padding="10dp">
+                <TextView
+                    android:id="@+id/commentsTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/summaryTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:text="@string/order_summary_info"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_below="@+id/commentsBody"/>
+
+            <LinearLayout
+                android:id="@+id/summaryBody"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/rectangle"
+                android:layout_below="@+id/summaryTitle"
+                android:padding="10dp"/>
+
+            <TextView
+                android:id="@+id/couponsTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:text="@string/step_four_coupon_title"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_below="@+id/summaryBody"/>
+
+            <RelativeLayout
+                android:id="@+id/couponsRel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/couponsTitle">
+
+                <com.beardedhen.androidbootstrap.BootstrapButton
+                    xmlns:bootstrap="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/couponsCalcBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/step_four_coupon_btn"
+                    bootstrap:bb_type="primary"
+                    bootstrap:bb_icon_left="fa-rotate-right"
+                    bootstrap:bb_roundedCorners="true"
+                    bootstrap:bb_size="small"/>
+
+                <com.beardedhen.androidbootstrap.BootstrapEditText
+                    xmlns:bootstrap="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/couponsEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_centerVertical="true"
+                    android:hint="@string/step_four_coupon_hint"
+                    android:layout_toLeftOf="@+id/couponsCalcBtn"
+                    android:singleLine="true"
+                    bootstrap:be_roundedCorners="true"
+                    bootstrap:be_state="warning"/>
+
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/termsRel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/couponsRel"
+                android:layout_marginTop="10dp">
+                <CheckBox
+                    android:id="@+id/termsAgreeCheckbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:id="@+id/termsAgreeTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/step_four_terms_txt"
+                    android:textSize="15sp"
+                    android:layout_toRightOf="@+id/termsAgreeCheckbox"
+                    android:clickable="true"
+                    android:onClick="openTerms"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+            <com.beardedhen.androidbootstrap.BootstrapButton
+                xmlns:bootstrap="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/checkoutComplete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:layout_below="@+id/termsRel"
+                android:text="@string/step_four_done_btn"
+                bootstrap:bb_icon_left="fa-check"
+                bootstrap:bb_type="success"
+                bootstrap:bb_roundedCorners="true"
+                bootstrap:bb_size="normal"/>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <com.todddavies.components.progressbar.ProgressWheel
+        xmlns:ProgressWheel="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/progressBarVP"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_centerInParent="true"
+        ProgressWheel:rimColor="#330097D6"
+        ProgressWheel:barColor="#0097D6"
+        ProgressWheel:barLength="60dp"
+        ProgressWheel:barWidth="2dp"
+        ProgressWheel:rimWidth="2dp"
+        ProgressWheel:contourColor="#330097D6"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>

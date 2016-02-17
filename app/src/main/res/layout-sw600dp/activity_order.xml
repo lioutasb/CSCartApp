@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/tone_of_white">
+
+    <include android:id="@+id/action_bar"
+        layout="@layout/toolbar"/>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/action_bar">
+        <RelativeLayout
+            android:id="@+id/content_frame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/orderTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ΚΑΤΑΣΤΑΣΗ: ΑΝΟΙΓΜΑ"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/statusTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/orderTitle"
+                android:padding="5dp"
+                android:text="ΚΑΤΑΣΤΑΣΗ: ΑΝΟΙΓΜΑ"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/customerInfoTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:layout_below="@+id/statusTitle"
+                android:text="@string/order_customer_info"
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+            <RelativeLayout
+                android:id="@+id/customerInfoBody"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangle"
+                android:layout_below="@+id/customerInfoTitle"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/s_address_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/order_shipping_info"
+                    android:textStyle="italic|bold"/>
+
+                <TextView
+                    android:id="@+id/s_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/s_address_title"
+                    android:text="Billys Lioutas"
+                    android:textSize="13sp"/>
+
+                <TextView
+                    android:id="@+id/s_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/s_name"
+                    android:text="tyroline@gmail.com"
+                    android:textSize="13sp"/>
+
+                <TextView
+                    android:id="@+id/s_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/s_email"
+                    android:text="6949427876"
+                    android:textSize="13sp"/>
+
+                <TextView
+                    android:id="@+id/s_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/s_phone"
+                    android:text="Kon/nou palaiologou 18"
+                    android:textSize="13sp"/>
+
+                <TextView
+                    android:id="@+id/s_city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/s_address"
+                    android:text="Thessaloniki"
+                    android:textSize="13sp"/>
+
+                <TextView
+                    android:id="@+id/s_country"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/s_city"
+                    android:text="Greece"
+                    android:textSize="13sp"/>
+
+                <TextView
+                    android:id="@+id/s_region"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/s_country"
+                    android:text="Τρικάλων"
+                    android:textSize="13sp"/>
+
+                <TextView
+                    android:id="@+id/s_zipcode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/s_region"
+                    android:text="54635"
+                    android:textSize="13sp"/>
+
+                <TextView
+                    android:id="@+id/b_address_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:text="@string/order_billing_info"
+                    android:layout_below="@+id/s_zipcode"
+                    android:textStyle="italic|bold"/>
+
+                <TextView
+                    android:id="@+id/b_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/b_address_title"
+                    android:text="Billys Lioutas"
+                    android:textSize="13sp"/>
+
+                <TextView
+                    android:id="@+id/b_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/b_name"
+                    android:text="tyroline@gmail.com"
+                    android:textSize="13sp"/>
+
+                <TextView
+                    android:id="@+id/b_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/b_email"
+                    android:text="6949427876"
+                    android:textSize="13sp"/>
+
+                <TextView
+                    android:id="@+id/b_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/b_phone"
+                    android:text="Kon/nou palaiologou 18"
+                    android:textSize="13sp"/>
+
+                <TextView
+                    android:id="@+id/b_city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/b_address"
+                    android:text="Thessaloniki"
+                    android:textSize="13sp"/>
+
+                <TextView
+                    android:id="@+id/b_country"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/b_city"
+                    android:text="Greece"
+                    android:textSize="13sp"/>
+
+                <TextView
+                    android:id="@+id/b_region"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/b_country"
+                    android:text="Τρικάλων"
+                    android:textSize="13sp"/>
+
+                <TextView
+                    android:id="@+id/b_zipcode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/b_region"
+                    android:text="54635"
+                    android:textSize="13sp"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/productsListTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:text="@string/order_products_info"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_below="@+id/customerInfoBody"/>
+
+            <FrameLayout
+                android:id="@+id/productsListBody"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/productsListTitle"
+                android:background="@drawable/rectangle">
+
+                <gr.plushost.prototypeapp.widgets.NestedListView
+                    android:id="@+id/productListView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/commentsTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:text="@string/order_comments_info"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_below="@+id/productsListBody"/>
+
+            <FrameLayout
+                android:id="@+id/commentsBody"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangle"
+                android:layout_below="@+id/commentsTitle"
+                android:padding="10dp">
+                <TextView
+                    android:id="@+id/commentsTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="From mobile payment asd"/>
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/summaryTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:text="@string/order_summary_info"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_below="@+id/commentsBody"/>
+
+            <LinearLayout
+                android:id="@+id/summaryBody"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/rectangle"
+                android:layout_below="@+id/summaryTitle"
+                android:padding="10dp"/>
+
+            <ImageView
+                android:id="@+id/barcodeImg"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_below="@+id/summaryBody"
+                android:scaleType="fitCenter"/>
+
+            <com.beardedhen.androidbootstrap.BootstrapButton
+                xmlns:bootstrap="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/invoicePrint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:layout_below="@+id/barcodeImg"
+                android:text="@string/order_btn_print_invoice_pdf"
+                bootstrap:bb_icon_left="fa-file-text"
+                bootstrap:bb_type="danger"
+                bootstrap:bb_roundedCorners="true"
+                bootstrap:bb_size="small"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/progressBarRel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/action_bar"
+        android:visibility="visible">
+        <ProgressBar
+            android:id="@+id/progressBarLoading"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminateDrawable="@drawable/progress_blue"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+</RelativeLayout>

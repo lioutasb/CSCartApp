@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ProgressWheel="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/product_img_size">
+
+    <ImageView
+        android:id="@+id/imgShow"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/product_img_size"
+        android:background="#FFFFFF"
+        android:scaleType="fitCenter"
+        android:layout_alignParentLeft="true"/>
+
+    <com.todddavies.components.progressbar.ProgressWheel
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/progressBarProduct"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        ProgressWheel:rimColor="#330097D6"
+        ProgressWheel:barColor="#0097D6"
+        ProgressWheel:barLength="3dp"
+        ProgressWheel:barWidth="1dp"
+        ProgressWheel:rimWidth="1dp"
+        ProgressWheel:contourColor="#330097D6"/>
+</RelativeLayout>

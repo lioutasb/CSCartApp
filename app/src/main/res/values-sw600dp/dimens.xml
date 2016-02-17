@@ -1,0 +1,12 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="banner_size">250dp</dimen>
+    <dimen name="product_img_size">300dp</dimen>
+    <dimen name="cart_product_img_size">130dp</dimen>
+    <dimen name="nav_drawer_size">290dp</dimen>
+
+    <dimen name="social_1_btn">50dp</dimen>
+    <dimen name="social_2_btn">50dp</dimen>
+    <dimen name="social_3_btn">50dp</dimen>
+    <dimen name="social_4_btn">50dp</dimen>
+</resources>

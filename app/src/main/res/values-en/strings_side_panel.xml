@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="first_group_name">Products</string>
+    <string name="btn_cart_text_empty">Cart is empty</string>
+    <string name="btn_cart_text_product">%s product in cart</string>
+    <string name="btn_cart_text_products">%s products in cart</string>
+
+    <string name="second_group_name">Newsletter</string>
+    <string name="promotional_text_first">Join us</string>
+    <string name="email_hint_example_editext">e-mail@example.com</string>
+    <string name="btn_man_newsletter">Man</string>
+    <string name="btn_woman_newsletter">Woman</string>
+    <string name="btn_newsletter_signup">Submit</string>
+    <string name="promotional_text_second">to first enjoy the best deals!</string>
+
+    <string name="third_group_name">Account</string>
+    <string name="btn_account_connect">Sign in</string>
+    <string name="btn_new_account">Register</string>
+    <string name="btn_recover_password">Password Recovery</string>
+    <string name="btn_my_orders">Orders</string>
+    <string name="btn_profile_details">Profile Details</string>
+    <string name="btn_logout">Sign out</string>
+
+    <string name="btn_logout_success">You Have Successfully Logged Out</string>
+    <string name="btn_logout_fail">Oops something went wrong, try again.</string>
+
+    <string name="newsletter_missing_email_msg">E-mail is not valid or is missing</string>
+    <string name="newsletter_success_msg">Subscribe Successfully</string>
+
+    <string name="btn_home">Home Screen</string>
+</resources>

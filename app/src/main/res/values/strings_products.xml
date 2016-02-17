@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="txt_no_products">Δεν υπάρχουν προϊόντα σε αυτήν την κατηγορία</string>
+    <string name="txt_no_results">Δεν βρέθηκαν προϊόντα που να ταιριάζουν στα κριτήρια αναζήτησης που δώσατε</string>
+    <string name="toast_need_more_products_to_compare">Επέλεξε τουλάχιστον δύο προϊόντα για σύγκριση</string>
+    <string name="txt_selected_products">%d Προϊόντα</string>
+    <string name="txt_selected_product">%d Προϊόν</string>
+    <string name="txt_btn_change_style">Τύπος Προβολής</string>
+    <string name="txt_btn_filters">Φίλτρα</string>
+
+    <string name="txt_filters_title">Φίλτρα</string>
+    <string name="txt_filters_positive">OK</string>
+    <string name="txt_filters_reset">Επαναφορά</string>
+    <string name="txt_filters_cancel">Ακύρωση</string>
+
+    <string name="txt_discount_product">ΕΚΠΤΩΣΗ %s%%</string>
+    <string name="txt_free_shipping_products">Δωρεάν μεταφορικά</string>
+    <string name="no_sort_txt">Χωρίς Ταξινόμηση</string>
+
+    <string-array name="sorting_methods">
+        <item>Χωρίς Ταξινόμηση</item>
+        <item>Θέση: Χαμηλή σε Υψηλή</item>
+        <item>Εμφανίσε τα νεότερα προϊόντα</item>
+        <item>Ταξινόμησε αλφαβητικά το Α έως Ζ</item>
+        <item>Ταξινόμησε αλφαβητικά το Ζ έως Α</item>
+        <item>Τιμή: Φθηνότερο σε Ακριβότερο</item>
+        <item>Τιμή: Ακριβότερο σε Φθηνότερο</item>
+        <item>Βάση δημοτικότητας</item>
+    </string-array>
+</resources>

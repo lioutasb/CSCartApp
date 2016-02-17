@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="not_internet_title">Πρόβλημα στο δίκτυο</string>
+    <string name="not_internet_msg">Δεν υπάρχει κάποια ενεργή σύνδεση στο Internet. Παρακαλώ ρυθμίστε το δικτυό σας σωστά.</string>
+    <string name="not_internet_settings_btn">Ρυθμίσεις</string>
+    <string name="not_internet_ok_btn">OK</string>
+    <string name="search_text_on_box">Αναζήτηση στο %s</string>
+    <string name="back_toast_warning_msg">Πατήστε άλλη μια φορά για έξοδο</string>
+    <string name="search_hint">Αναζήτηση στο %s</string>
+
+
+    <string translatable="false" name="social_url_1">https://www.facebook.com/</string>
+    <string translatable="false" name="social_fontawesome_icon_1">fa-facebook</string>
+    <color translatable="false" name="social_color_1">#3B5998</color>
+
+    <string translatable="false" name="social_url_2">https://twitter.com/</string>
+    <string translatable="false" name="social_fontawesome_icon_2">fa-twitter</string>
+    <color translatable="false" name="social_color_2">#55acee</color>
+
+    <string translatable="false" name="social_url_3">https://plus.google.com/</string>
+    <string translatable="false" name="social_fontawesome_icon_3">fa-google-plus</string>
+    <color translatable="false" name="social_color_3">#dd4b39</color>
+
+    <string translatable="false" name="social_url_4">https://www.youtube.com/</string>
+    <string translatable="false" name="social_fontawesome_icon_4">fa-youtube</string>
+    <color translatable="false" name="social_color_4">#cd201f</color>
+
+    <string name="btn_txt_1">Αποστολή &amp; Παράδοση</string>
+    <string translatable="false" name="btn_url_1">https://www.eshop-site.com/apostoli-paradosi-proionton.html</string>
+    <string name="btn_txt_2">Επιστροφές - Ανταλλαγές</string>
+    <string translatable="false" name="btn_url_2">https://www.eshop-site.com/epistrofes-proiontwn-el.html</string>
+    <string name="btn_txt_3">Τρόποι πληρωμής</string>
+    <string translatable="false" name="btn_url_3">https://www.eshop-site.com/tropoi-pliromis-el.html</string>
+    <string name="btn_txt_4">Φόρμα Επιστροφής</string>
+    <string translatable="false" name="btn_url_4">https://www.eshop-site.com/forma-epistrofis-el.html</string>
+    <string name="btn_txt_5">Επικοινωνία</string>
+    <string translatable="false" name="btn_url_5">https://www.eshop-site.com/epikoinonia.html</string>
+
+
+    <string name="txt_phone_title">Εξυπηρέτηση πελατών:</string>
+    <string name="txt_store_hours_title">Δευτ-Παρ: 8:30 - 14:30, 18:00 - 22:00\nΣάβ: 8:30 - 14:30</string>
+    <string name="txt_btn_terms">Όροι χρήσης</string>
+    <string translatable="false" name="txt_url_terms">https://www.eshop-site.com/oroi-xrisis-el.html</string>
+    <string name="txt_btn_privacy">Προσωπικά δεδομένα</string>
+    <string translatable="false" name="txt_url_privacy">https://www.eshop-site.com/proswpika-dedomena-el.html</string>
+
+    <string name="txt_freeship_title">ΔΩΡΕΑΝ ΜΕΤΑΦΟΡΙΚΑ</string>
+    <string name="txt_freeship_body">Για αγορές άνω των %s.</string>
+
+    <string name="txt_categories_promotion">Κατηγορίες:</string>
+</resources>

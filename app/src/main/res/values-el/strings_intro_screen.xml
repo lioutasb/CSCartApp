@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="page_1_title">Καλωσήρθατε στο %s</string>
+    <string name="page_2_title">Ψωνίστε έυκολα και γρήγορα</string>
+    <string name="page_3_title">Το δικό μου κατάστημα</string>
+    <string name="page_4_title">Έτοιμοι να σας εξυπηρετήσουμε</string>
+    <string name="page_5_title">Είστε έτοιμοι!</string>
+
+    <string name="page_1_description">Οι αγορές σας μόλις έγιναν διασκεδαστικές</string>
+    <string name="page_2_description">Περιηγηθείτε ανάμεσα στα χιλιάδες προϊοντα μας με ένα κλικ</string>
+    <string name="page_3_description">Δημιουργήστε ένα λογαριασμό στο καταστημά σας και απολαύστε πρώτοι αποκλειστικές προσφορές</string>
+    <string name="page_4_description">Για οποιαδήποτε απορία σας μπορείτε να απευθυνθείτε στο τηλεφωνικό μας κέντρο</string>
+    <string name="page_5_description">Ξεκινάμε;</string>
+
+    <string name="btn_done_txt">Έγινε</string>
+
+</resources>

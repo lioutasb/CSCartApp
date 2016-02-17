@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="txt_no_products">There are no products in this category</string>
+    <string name="txt_no_results">No products found matching the search criteria you entered</string>
+    <string name="toast_need_more_products_to_compare">Select at least two products to compare</string>
+    <string name="txt_selected_products">%d Products</string>
+    <string name="txt_selected_product">%d Product</string>
+    <string name="txt_btn_change_style">Change View</string>
+    <string name="txt_btn_filters">Filters</string>
+
+    <string name="txt_filters_title">Filters</string>
+    <string name="txt_filters_positive">OK</string>
+    <string name="txt_filters_reset">Reset</string>
+    <string name="txt_filters_cancel">Cancel</string>
+
+    <string name="txt_discount_product">DISCOUNT %s%%</string>
+    <string name="txt_free_shipping_products">Free Shipping</string>
+    <string name="no_sort_txt">No Sorting</string>
+
+    <string-array name="sorting_methods">
+        <item>No Sorting</item>
+        <item>Position: Low to High</item>
+        <item>Newest Products First</item>
+        <item>Sort Alphabetically: A to Z</item>
+        <item>Sort Alphabetically: Z to A</item>
+        <item>Sort by Price: Low to High</item>
+        <item>Sort by Price: High to Low</item>
+        <item>Sort by Popularity</item>
+    </string-array>
+</resources>

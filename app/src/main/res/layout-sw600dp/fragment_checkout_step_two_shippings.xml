@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bootstrap="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/step_two_method_title"
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+
+            <LinearLayout
+                android:id="@+id/linShips"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@+id/title"/>
+
+            <TextView
+                android:id="@+id/commentsTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linShips"
+                android:text="@string/step_two_comments_title"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:paddingTop="20dp"
+                android:paddingBottom="10dp"/>
+
+
+            <com.beardedhen.androidbootstrap.BootstrapEditText
+                android:id="@+id/commentEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/commentsTitle"
+                android:lines="5"
+                android:maxLines="5"
+                bootstrap:be_roundedCorners="true"
+                bootstrap:be_state="info"/>
+
+            <TextView
+                android:id="@+id/additionalInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_below="@+id/commentEditText"
+                android:text="@string/step_two_additional_info"/>
+
+
+
+        </RelativeLayout>
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/btnGo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="@string/step_two_next_btn"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_below="@+id/rel"
+            bootstrap:bb_icon_right="fa-chevron-circle-right"
+            bootstrap:bb_type="primary"
+            bootstrap:bb_roundedCorners="true"
+            bootstrap:bb_size="normal"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <com.todddavies.components.progressbar.ProgressWheel
+        xmlns:ProgressWheel="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/progressBarVP"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_centerInParent="true"
+        ProgressWheel:rimColor="#330097D6"
+        ProgressWheel:barColor="#0097D6"
+        ProgressWheel:barLength="60dp"
+        ProgressWheel:barWidth="2dp"
+        ProgressWheel:rimWidth="2dp"
+        ProgressWheel:contourColor="#330097D6"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>

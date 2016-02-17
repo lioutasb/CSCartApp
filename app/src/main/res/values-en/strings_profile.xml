@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="profile_lastname_fail_msg">The lastname cannot be empty</string>
+    <string name="profile_firstname_fail_msg">The firstname cannot be empty</string>
+    <string name="profile_phone_fail_msg">The mobile phone cannot be empty</string>
+    <string name="profile_zipcode_fail_msg">The zip code cannot be empty</string>
+    <string name="profile_zipcode_not_valid_msg">Zip code is not valid</string>
+    <string name="profile_city_fail_msg">The city cannot be empty</string>
+    <string name="profile_address_fail_msg">The address cannot be empty</string>
+    <string name="profile_region_fail_msg">The state cannot be empty</string>
+    <string name="profile_btn_save_success">The changes have been saved</string>
+    <string name="profile_btn_save_fail">Oops, something went wrong. Please try again</string>
+    <string name="profile_screen_title">Profile Details</string>
+
+    <string name="profile_shipping_address_title">Billing address</string>
+    <string name="profile_shipping_address_firstname">First name:*</string>
+    <string name="profile_shipping_address_lastname">Last name:*</string>
+    <string name="profile_shipping_address_address">Address:*</string>
+    <string name="profile_shipping_address_city">City:*</string>
+    <string name="profile_shipping_address_zipcode">Zip/postal code:*</string>
+    <string name="profile_shipping_address_country">Country:*</string>
+    <string name="profile_shipping_address_state">State/province:*</string>
+    <string name="profile_shipping_address_phone">Mobile Phone:*</string>
+    <string name="profile_save">Save</string>
+
+</resources>

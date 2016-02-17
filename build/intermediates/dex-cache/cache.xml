@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\user\Copy\Home\Public\PrototypeApp\app\build\intermediates\exploded-aar\it.sephiroth.android.library.horizontallistview\hlistview\1.2.2\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="698658e3af1e3f2a5b199e0d09ee6c57793405bd">
+        <dex dex="C:\Users\user\Copy\Home\Public\PrototypeApp\app\build\intermediates\pre-dexed\debug\classes-e7f90c0784cda99344d711a3fbdb5bcb9d225237.jar" />
+    </item>
+
+</items>

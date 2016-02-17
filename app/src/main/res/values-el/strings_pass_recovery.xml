@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pass_recovery_screen_title">Ανάκτηση Κωδικού Πρόσβασης</string>
+    <string name="pass_recovery_success_msg">Οδηγίες για την ανάκτηση του Κωδικού Πρόσβασης αποστάλθηκαν στο e-mail σας.</string>
+    <string name="pass_recovery_fail_msg">Το e-mail που πληκτρολογήσατε δεν υπάρχει. Σας παρακαλούμε ξανάπροσπαθήστε!</string>
+    <string name="pass_recovery_btn_recovery">Ανάκτηση Κωδικού</string>
+
+</resources>

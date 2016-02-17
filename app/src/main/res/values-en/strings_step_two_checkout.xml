@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="step_two_screen_title">Step 2 - Shipping Options</string>
+    <string name="step_two_method_title">Choose Shipping Option:</string>
+    <string name="step_two_next_btn">Next</string>
+    <string name="step_two_comments_title">You can leave us a comment here</string>
+    <string name="step_two_additional_info">Delivery time is calculated in business days.\n\n
+Products in stock will be sent after the payment is verified. Mail service is responsible for the goods during transportation.\n\n
+Please, open the package delivered under your order the moment you receive it. If any damage is revealed, make claims against mail service.</string>
+
+</resources>

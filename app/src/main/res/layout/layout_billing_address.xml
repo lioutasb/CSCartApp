@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bootstrap="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/b_addressTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/profile_shipping_address_title"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/b_addressUsernameTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/b_addressTitle"
+        android:text="@string/profile_shipping_address_firstname"
+        android:textSize="18sp" />
+
+    <com.beardedhen.androidbootstrap.BootstrapEditText
+        android:id="@+id/b_addressUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/b_addressUsernameTitle"
+        android:hint="Steve"
+        bootstrap:be_roundedCorners="true"
+        bootstrap:be_state="warning" />
+
+    <TextView
+        android:id="@+id/b_addressUsersernameTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/b_addressUsername"
+        android:text="@string/profile_shipping_address_lastname"
+        android:textSize="18sp" />
+
+    <com.beardedhen.androidbootstrap.BootstrapEditText
+        android:id="@+id/b_addressUsersername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/b_addressUsersernameTitle"
+        android:hint="Anderson"
+        bootstrap:be_roundedCorners="true"
+        bootstrap:be_state="warning" />
+
+    <TextView
+        android:id="@+id/b_addressUserAddressTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/b_addressUsersername"
+        android:text="@string/profile_shipping_address_address"
+        android:textSize="18sp" />
+
+    <com.beardedhen.androidbootstrap.BootstrapEditText
+        android:id="@+id/b_addressUserAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/b_addressUserAddressTitle"
+        android:hint="Kingston 12401"
+        bootstrap:be_roundedCorners="true"
+        bootstrap:be_state="warning" />
+
+    <TextView
+        android:id="@+id/b_addressUserCityTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/b_addressUserAddress"
+        android:text="@string/profile_shipping_address_city"
+        android:textSize="18sp" />
+
+    <com.beardedhen.androidbootstrap.BootstrapEditText
+        android:id="@+id/b_addressUserCity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/b_addressUserCityTitle"
+        android:hint="New York"
+        bootstrap:be_roundedCorners="true"
+        bootstrap:be_state="warning" />
+
+    <TextView
+        android:id="@+id/b_addressUserTKTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/b_addressUserCity"
+        android:text="@string/profile_shipping_address_zipcode"
+        android:textSize="18sp" />
+
+    <com.beardedhen.androidbootstrap.BootstrapEditText
+        android:id="@+id/b_addressUserTK"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/b_addressUserTKTitle"
+        android:hint="10003"
+        bootstrap:be_roundedCorners="true"
+        bootstrap:be_state="warning" />
+
+    <TextView
+        android:id="@+id/b_addressUserCountryTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/b_addressUserTK"
+        android:text="@string/profile_shipping_address_country"
+        android:textSize="18sp" />
+
+    <Spinner
+        android:id="@+id/b_spinnerUserCountry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/b_addressUserCountryTitle"
+        android:background="@drawable/spinnercount_spinner_background_holo_light"
+        android:gravity="center"
+        android:spinnerMode="dialog" />
+
+    <TextView
+        android:id="@+id/b_addressUserRegionTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/b_spinnerUserCountry"
+        android:text="@string/profile_shipping_address_state"
+        android:textSize="18sp" />
+
+    <Spinner
+        android:id="@+id/b_spinnerUserRegion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/b_addressUserRegionTitle"
+        android:background="@drawable/spinnercount_spinner_background_holo_light"
+        android:gravity="center"
+        android:spinnerMode="dialog" />
+
+    <com.beardedhen.androidbootstrap.BootstrapEditText
+        android:id="@+id/b_addressUserRegion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/b_spinnerUserRegion"
+        android:hint="Illinois"
+        bootstrap:be_roundedCorners="true"
+        bootstrap:be_state="warning" />
+
+    <TextView
+        android:id="@+id/b_addressUserPhoneTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/b_addressUserRegion"
+        android:text="@string/profile_shipping_address_phone"
+        android:textSize="18sp" />
+
+    <com.beardedhen.androidbootstrap.BootstrapEditText
+        android:id="@+id/b_addressUserPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/b_addressUserPhoneTitle"
+        android:hint="6900000000"
+        android:inputType="phone"
+        bootstrap:be_roundedCorners="true"
+        bootstrap:be_state="warning" />
+
+    <TextView
+        android:id="@+id/b_addressUserSexTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/b_addressUserPhone"
+        android:text="Φύλο:*"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+    <Spinner
+        android:id="@+id/b_spinnerUserSex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/b_addressUserSexTitle"
+        android:background="@drawable/spinnercount_spinner_background_holo_light"
+        android:gravity="center"
+        android:spinnerMode="dialog"
+        android:visibility="gone" />
+
+</RelativeLayout>

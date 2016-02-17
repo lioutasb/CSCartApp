@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bootstrap="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/nav_drawer_size"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:background="@color/gray">
+
+    <gr.plushost.prototypeapp.widgets.LockableScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.beardedhen.androidbootstrap.BootstrapButton
+                android:id="@+id/homeBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_home"
+                android:textSize="12sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_centerHorizontal="true"
+                bootstrap:bb_icon_left="fa-home"
+                bootstrap:bb_icon_right="fa-chevron-circle-right"
+                bootstrap:bb_type="brown"
+                bootstrap:bb_roundedCorners="true"
+                bootstrap:bb_size="small"/>
+
+            <RelativeLayout
+                android:id="@+id/cartLay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/homeBtn"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingBottom="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/titleCart">
+                    <View
+                        android:layout_width="30dp"
+                        android:layout_height="1dp"
+                        android:background="@color/dark_light_grey"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:id="@+id/div3"
+                        android:layout_centerInParent="true"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/first_group_name"
+                        android:textSize="20sp"
+                        android:id="@+id/txtCartTitle"
+                        android:layout_centerHorizontal="true"
+                        android:paddingLeft="@dimen/activity_horizontal_margin"
+                        android:paddingRight="@dimen/activity_horizontal_margin"
+                        android:textColor="#8DCA21" />
+                    <View
+                        android:layout_width="30dp"
+                        android:layout_height="1dp"
+                        android:background="@color/dark_light_grey"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerInParent="true"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/emptyRel10"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_below="@+id/titleCart"/>
+
+                <com.beardedhen.androidbootstrap.BootstrapButton
+                    android:id="@+id/swipeCart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btn_cart_text_empty"
+                    android:textSize="12sp"
+                    android:layout_below="@+id/emptyRel10"
+                    bootstrap:bb_icon_left="fa-shopping-cart"
+                    bootstrap:bb_icon_right="fa-chevron-circle-right"
+                    bootstrap:bb_type="primary"
+                    bootstrap:bb_roundedCorners="true"
+                    bootstrap:bb_size="normal"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/newsletterLay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:layout_below="@+id/cartLay"
+                android:paddingBottom="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/titleNews">
+                    <View
+                        android:layout_width="30dp"
+                        android:layout_height="1dp"
+                        android:background="@color/dark_light_grey"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:id="@+id/div"
+                        android:layout_centerInParent="true"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/second_group_name"
+                        android:textSize="20sp"
+                        android:id="@+id/txtNewsTitle"
+                        android:layout_centerHorizontal="true"
+                        android:paddingLeft="@dimen/activity_horizontal_margin"
+                        android:paddingRight="@dimen/activity_horizontal_margin"
+                        android:textColor="#EF671C" />
+                    <View
+                        android:layout_width="30dp"
+                        android:layout_height="1dp"
+                        android:background="@color/dark_light_grey"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerInParent="true"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textComp"
+                    android:text="@string/promotional_text_first"
+                    android:textSize="16sp"
+                    android:layout_below="@+id/titleNews"/>
+
+                <com.beardedhen.androidbootstrap.BootstrapEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:ems="10"
+                    android:singleLine="true"
+                    android:id="@+id/editTextEmail"
+                    android:layout_below="@+id/textComp"
+                    android:hint="@string/email_hint_example_editext"
+                    bootstrap:be_roundedCorners="true"
+                    bootstrap:be_state="success"/>
+
+                <RelativeLayout
+                    android:id="@+id/emptyRel9"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_below="@+id/editTextEmail"/>
+
+                <com.beardedhen.androidbootstrap.BootstrapButton
+                    android:id="@+id/btnNewsletterSignUp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/emptyRel9"
+                    android:text="@string/btn_newsletter_signup"
+                    bootstrap:bb_type="success"
+                    bootstrap:bb_roundedCorners="true"
+                    bootstrap:bb_size="normal"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textComp2"
+                    android:text="@string/promotional_text_second"
+                    android:textSize="16sp"
+                    android:layout_below="@+id/btnNewsletterSignUp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/accountLay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:layout_below="@+id/newsletterLay"
+                android:paddingBottom="15dp"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/titleAccount">
+                    <View
+                        android:layout_width="30dp"
+                        android:layout_height="1dp"
+                        android:background="@color/dark_light_grey"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:id="@+id/div1"
+                        android:layout_centerInParent="true"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/third_group_name"
+                        android:textSize="20sp"
+                        android:id="@+id/txtAccountTitle"
+                        android:layout_centerHorizontal="true"
+                        android:paddingLeft="@dimen/activity_horizontal_margin"
+                        android:paddingRight="@dimen/activity_horizontal_margin"
+                        android:textColor="#29A9E4"/>
+                    <View
+                        android:layout_width="30dp"
+                        android:layout_height="1dp"
+                        android:background="@color/dark_light_grey"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerInParent="true"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/emptyRel7"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_below="@+id/titleAccount"/>
+
+                <com.beardedhen.androidbootstrap.BootstrapButton
+                    android:id="@+id/sundesiBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btn_account_connect"
+                    android:layout_below="@+id/emptyRel7"
+                    bootstrap:bb_icon_right="fa-chevron-circle-right"
+                    bootstrap:bb_type="primary"
+                    bootstrap:bb_roundedCorners="true"
+                    bootstrap:bb_size="normal"/>
+
+                <RelativeLayout
+                    android:id="@+id/emptyRel5"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_below="@+id/sundesiBtn"/>
+
+                <com.beardedhen.androidbootstrap.BootstrapButton
+                    android:id="@+id/newAccountBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btn_new_account"
+                    android:layout_below="@+id/emptyRel5"
+                    bootstrap:bb_icon_right="fa-chevron-circle-right"
+                    bootstrap:bb_type="warning"
+                    bootstrap:bb_roundedCorners="true"
+                    bootstrap:bb_size="normal"/>
+
+                <RelativeLayout
+                    android:id="@+id/emptyRel6"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_below="@+id/newAccountBtn"/>
+
+                <com.beardedhen.androidbootstrap.BootstrapButton
+                    android:id="@+id/newPassBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btn_recover_password"
+                    android:layout_below="@+id/emptyRel6"
+                    bootstrap:bb_icon_right="fa-chevron-circle-right"
+                    bootstrap:bb_type="danger"
+                    bootstrap:bb_roundedCorners="true"
+                    bootstrap:bb_size="normal"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/accountLayLogged"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:layout_below="@+id/accountLay"
+                android:paddingBottom="15dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/titleAccount2">
+                    <View
+                        android:layout_width="30dp"
+                        android:layout_height="1dp"
+                        android:background="@color/dark_light_grey"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:id="@+id/div12"
+                        android:layout_centerInParent="true"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/third_group_name"
+                        android:textSize="20sp"
+                        android:id="@+id/txtAccountTitle2"
+                        android:layout_centerHorizontal="true"
+                        android:paddingLeft="@dimen/activity_horizontal_margin"
+                        android:paddingRight="@dimen/activity_horizontal_margin"
+                        android:textColor="#29A9E4"/>
+                    <View
+                        android:layout_width="30dp"
+                        android:layout_height="1dp"
+                        android:background="@color/dark_light_grey"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerInParent="true"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/emptyRel72"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_below="@+id/titleAccount2"/>
+
+                <RelativeLayout
+                    android:id="@+id/userInfoRel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/emptyRel72"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+                    <com.beardedhen.androidbootstrap.FontAwesomeText
+                        android:id="@+id/userIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="32sp"
+                        bootstrap:fa_icon="fa-user"
+                        android:textColor="#339966"
+                        android:layout_centerVertical="true"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/userIcon">
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/userName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Billys Lioutas"
+                            android:layout_centerHorizontal="true"
+                            android:singleLine="true"
+                            android:ellipsize="end"
+                            android:textSize="20sp"/>
+
+                        <me.grantland.widget.AutofitTextView
+                            android:id="@+id/email"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/userName"
+                            android:gravity="center"
+                            android:text="tyroline@gmail.com"
+                            android:layout_centerHorizontal="true"
+                            android:singleLine="true"
+                            android:ellipsize="marquee"
+                            android:textSize="15sp"/>
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/emptyRel52"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_below="@+id/userInfoRel"/>
+
+                <com.beardedhen.androidbootstrap.BootstrapButton
+                    android:id="@+id/userOrders"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btn_my_orders"
+                    android:layout_below="@+id/emptyRel52"
+                    bootstrap:bb_icon_right="fa-chevron-circle-right"
+                    bootstrap:bb_type="primary"
+                    bootstrap:bb_roundedCorners="true"
+                    bootstrap:bb_size="normal"/>
+
+                <RelativeLayout
+                    android:id="@+id/emptyRel62"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_below="@+id/userOrders"/>
+
+                <com.beardedhen.androidbootstrap.BootstrapButton
+                    android:id="@+id/userProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btn_profile_details"
+                    android:layout_below="@+id/emptyRel62"
+                    bootstrap:bb_icon_right="fa-chevron-circle-right"
+                    bootstrap:bb_type="warning"
+                    bootstrap:bb_roundedCorners="true"
+                    bootstrap:bb_size="normal"/>
+
+                <RelativeLayout
+                    android:id="@+id/emptyRel63"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_below="@+id/userProfile"/>
+
+                <com.beardedhen.androidbootstrap.BootstrapButton
+                    android:id="@+id/userLogout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btn_logout"
+                    android:layout_below="@+id/emptyRel63"
+                    bootstrap:bb_icon_right="fa-chevron-circle-right"
+                    bootstrap:bb_type="danger"
+                    bootstrap:bb_roundedCorners="true"
+                    bootstrap:bb_size="normal"/>
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </gr.plushost.prototypeapp.widgets.LockableScrollView>
+</RelativeLayout>

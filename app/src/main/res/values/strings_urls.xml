@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string translatable="false" name="api_code">rL`CN>5]q^mcR*Bq</string>
+
+    <string translatable="false" name="url_categories">/mobapi/index.php?sl=%s&amp;currency=%s&amp;method=category.get&amp;parent_cid=%s</string>
+    <string translatable="false" name="url_products_filters">/mobapi/index.php?sl=%s&amp;currency=%s&amp;method=items.filters&amp;cid=%s</string>
+    <string translatable="false" name="url_products_of_category">/mobapi/index.php?sl=%s&amp;currency=%s&amp;method=items.get&amp;cid=%d&amp;page_size=10&amp;page_no=%d</string>
+    <string translatable="false" name="url_search">/mobapi/index.php?sl=%s&amp;currency=%s&amp;method=items.get&amp;q=%s&amp;page_size=10&amp;page_no=%d</string>
+    <string translatable="false" name="url_product">/mobapi/index.php?sl=%s&amp;currency=%s&amp;method=item.get&amp;item_id=%d</string>
+    <string translatable="false" name="url_store_info">/mobapi/index.php?sl=%s&amp;currency=%s&amp;method=store.information.get</string>
+    <string translatable="false" name="url_get_user_address">/mobapi/index.php?sl=%s&amp;currency=%s&amp;method=user.addresses.get</string>
+    <string translatable="false" name="url_update_user_address">/mobapi/index.php?sl=%s&amp;currency=%s&amp;method=user.address.update&amp;address_book_id=%d&amp;gender=%s&amp;firstname=%s&amp;lastname=%s&amp;telephone=%s&amp;postcode=%s&amp;city=%s&amp;address1=%s&amp;country_code=%s&amp;zone_code=%s&amp;state=%s&amp;address2=%s</string>
+    <string translatable="false" name="url_check_if_user_exists">/mobapi/index.php?sl=%s&amp;currency=%s&amp;method=user.isexists&amp;email=%s</string>
+    <string translatable="false" name="url_login_user">/mobapi/index.php?sl=%s&amp;currency=%s&amp;method=user.login&amp;uname=%s&amp;pwd=%s</string>
+    <string translatable="false" name="url_register_user">/mobapi/index.php?sl=%s&amp;currency=%s&amp;method=user.register&amp;email=%s&amp;pwd=%s&amp;firstname=%s&amp;lastname=%s&amp;mobile=%s</string>
+    <string translatable="false" name="url_logout_user">/mobapi/index.php?sl=%s&amp;currency=%s&amp;method=user.logout</string>
+    <string translatable="false" name="url_get_product_reviews">/mobapi/index.php?sl=%s&amp;currency=%s&amp;method=reviews.get&amp;item_id=%d&amp;page_size=%d&amp;page_no=%d</string>
+    <string translatable="false" name="url_post_product_review">/mobapi/index.php?sl=%s&amp;currency=%s&amp;method=review.add&amp;item_id=%d&amp;uname=%s&amp;content=%s&amp;rating=%d</string>
+    <string translatable="false" name="url_get_user_name">/mobapi/index.php?sl=%s&amp;currency=%s&amp;method=user.name.get</string>
+    <string translatable="false" name="url_get_banners">/mobapi/index.php?sl=%s&amp;currency=%s&amp;method=banners.get</string>
+    <string translatable="false" name="url_get_cart_info">/mobapi/index.php?sl=%s&amp;currency=%s&amp;method=shoppingcart.get</string>
+    <string translatable="false" name="url_add_product_to_cart">/mobapi/index.php?sl=%s&amp;currency=%s&amp;method=shoppingcart.add&amp;item_id=%d&amp;qty=%d&amp;attributes=%s</string>
+    <string translatable="false" name="url_update_cart_item">/mobapi/index.php?sl=%s&amp;currency=%s&amp;method=shoppingcart.update&amp;cart_item_id=%s&amp;qty=%s</string>
+    <string translatable="false" name="url_remove_cart_item">/mobapi/index.php?sl=%s&amp;currency=%s&amp;method=shoppingcart.remove&amp;cart_item_id=%s</string>
+    <string translatable="false" name="url_cart_count">/mobapi/index.php?sl=%s&amp;currency=%s&amp;method=shoppingcart.count</string>
+    <string translatable="false" name="url_clear_cart">/mobapi/index.php?sl=%s&amp;currency=%s&amp;method=shoppingcart.clear</string>
+    <string translatable="false" name="url_orders_get">/mobapi/index.php?sl=%s&amp;currency=%s&amp;method=orders.get&amp;total_from=%s&amp;total_to=%s&amp;order_id=%s&amp;statuses=%s</string>
+    <string translatable="false" name="url_order_get">/mobapi/index.php?sl=%s&amp;currency=%s&amp;method=order.get&amp;order_id=%s</string>
+    <string translatable="false" name="url_orders_statuses_get">/mobapi/index.php?sl=%s&amp;currency=%s&amp;method=orders.statuses.get_simple</string>
+    <string translatable="false" name="url_user_password_recovery">/mobapi/index.php?sl=%s&amp;currency=%s&amp;method=user.forgotpwd&amp;email=%s</string>
+    <string translatable="false" name="url_checkout_get_shipping_methods">/mobapi/index.php?sl=%s&amp;currency=%s&amp;method=shoppingcart.shippingmethods.get</string>
+    <string translatable="false" name="url_checkout_update_shipping_method">/mobapi/index.php?sl=%s&amp;currency=%s&amp;method=shoppingcart.shippingmethods.update&amp;shipping_method_id=%s&amp;comments=%s</string>
+    <string translatable="false" name="url_checkout_get_payment_methods">/mobapi/index.php?sl=%s&amp;currency=%s&amp;method=shoppingcart.paymentmethods.get</string>
+    <string translatable="false" name="url_checkout_update_payment_methods">/mobapi/index.php?sl=%s&amp;currency=%s&amp;method=shoppingcart.paymentmethods.update&amp;payment_method_id=%s</string>
+    <string translatable="false" name="url_checkout_details">/mobapi/index.php?sl=%s&amp;currency=%s&amp;method=shoppingcart.checkout.detail</string>
+    <string translatable="false" name="url_checkout_coupon">/mobapi/index.php?sl=%s&amp;currency=%s&amp;method=shoppingcart.coupons.update&amp;coupon_id=%s</string>
+    <string translatable="false" name="url_checkout_complete">/mobapi/index.php?sl=%s&amp;currency=%s&amp;method=shoppingcart.checkout</string>
+    <string translatable="false" name="url_newsletter_signup">/mobapi/index.php?sl=%s&amp;currency=%s&amp;method=newsletter.subscribe&amp;email=%s</string>
+
+</resources>

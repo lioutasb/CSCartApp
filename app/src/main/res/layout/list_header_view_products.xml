@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sticky"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/dark_theme"
+    android:visibility="visible">
+
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <gr.plushost.prototypeapp.widgets.HintedImageView
+             android:id="@+id/btnChangeView"
+             android:src="@drawable/changestyle_big"
+             android:layout_height="40dp"
+             android:layout_width="40dp"
+             android:paddingTop="5dp"
+             android:paddingLeft="5dp"
+             android:paddingRight="5dp"
+             android:paddingBottom="5dp"
+             android:layout_marginRight="5dp"
+             android:layout_centerVertical="true"
+             android:background="@drawable/btn_press"
+             android:contentDescription="@string/txt_btn_change_style" />
+
+        <Spinner
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/sortPros"
+            android:layout_centerVertical="true"
+            android:entries="@array/sorting_methods"
+            android:layout_toRightOf="@+id/btnChangeView"/>
+
+        <gr.plushost.prototypeapp.widgets.HintedImageView
+            android:id="@+id/btnFilters"
+            android:src="@drawable/icon_filters"
+            android:layout_height="40dp"
+            android:layout_width="40dp"
+            android:clickable="true"
+            android:paddingTop="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_press"
+            android:contentDescription="@string/txt_btn_filters"
+            android:layout_toRightOf="@+id/sortPros"
+            android:onClick="openFilters"/>
+    </RelativeLayout>
+
+    <View
+         android:id="@+id/empV1"
+         android:layout_width="match_parent"
+         android:layout_height="5dp"
+         android:layout_below="@+id/container"/>
+
+    <View
+         android:layout_width="match_parent"
+         android:layout_height="2dp"
+         android:background="#A8A8A8"
+         android:layout_below="@+id/empV1"/>
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cart_screen_name">Καλάθι</string>
+    <string name="cart_count_products_msg">%d προϊόντα στο καλάθι</string>
+    <string name="cart_count_product_msg">%d προϊόν στο καλάθι</string>
+
+    <string name="cart_product_code">Κωδικός προϊόντος: %s</string>
+    <string name="cart_unit_price">Τιμή μονάδας: %s</string>
+    <string name="cart_qty">Ποσότητα: %s</string>
+    <string name="cart_total_price">Τελική τιμή: %s</string>
+
+    <string name="cart_btn_checkout">Προχωρήστε στο Ταμείο</string>
+    <string name="cart_empty_cart">Το καλάθι είναι άδειο</string>
+
+</resources>

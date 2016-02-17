@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <include android:id="@+id/action_bar"
+        layout="@layout/toolbar"/>
+
+    <ScrollView
+        android:id="@+id/scrollViewCart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/action_bar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtTotalItems"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:layout_gravity="left"
+                android:text="2 προιοντα στο καλαθι"
+                android:textStyle="italic|bold"
+                android:textSize="19sp"/>
+
+            <gr.plushost.prototypeapp.widgets.NestedListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cartListView"
+                android:divider="@null"
+                android:dividerHeight="0dp"
+                android:clickable="true"/>
+
+            <LinearLayout
+                android:id="@+id/txtTotals"
+                android:orientation="vertical"
+                android:layout_gravity="right"
+                android:paddingRight="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_below="@+id/txtTotals"/>
+
+            <RelativeLayout
+                android:id="@+id/checkoutRelTmp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:padding="10dp"
+                android:background="#cc9e9e9e"
+                android:clickable="true"
+                android:visibility="invisible">
+
+                <com.beardedhen.androidbootstrap.BootstrapButton
+                    android:id="@+id/checkout_from_cart_btnTmp"
+                    xmlns:bootstrap="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/cart_btn_checkout"
+                    bootstrap:bb_icon_left="fa-shopping-cart"
+                    bootstrap:bb_type="primary"
+                    bootstrap:bb_roundedCorners="true"
+                    bootstrap:bb_size="normal"
+                    android:visibility="invisible"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/checkoutRel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="10dp"
+        android:background="#cc9e9e9e"
+        android:clickable="true">
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/checkout_from_cart_btn"
+            xmlns:bootstrap="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/cart_btn_checkout"
+            bootstrap:bb_icon_left="fa-shopping-cart"
+            bootstrap:bb_type="primary"
+            bootstrap:bb_roundedCorners="true"
+            bootstrap:bb_size="normal"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/empty_cart_rel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <ImageView
+            android:id="@+id/empty_cart_img"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/empty_cart"/>
+
+        <TextView
+            android:id="@+id/empty_cart_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/empty_cart_img"
+            android:text="@string/cart_empty_cart"
+            android:textColor="#BDBDBD"
+            android:textSize="30sp"
+            android:textStyle="bold|italic"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/progressBarRel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/action_bar"
+        android:visibility="gone">
+        <ProgressBar
+            android:id="@+id/progressBarLoading"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:indeterminateDrawable="@drawable/progress_blue"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+</RelativeLayout>

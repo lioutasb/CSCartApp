@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="first_group_name">Προϊόντα</string>
+    <string name="btn_cart_text_empty">Το καλάθι είναι άδειο</string>
+    <string name="btn_cart_text_product">%s προϊόν στο καλάθι</string>
+    <string name="btn_cart_text_products">%s προϊόντα στο καλάθι</string>
+
+    <string name="second_group_name">Newsletter</string>
+    <string name="promotional_text_first">Έλα στην παρέα μας</string>
+    <string name="email_hint_example_editext">e-mail@example.com</string>
+    <string name="btn_man_newsletter">Άνδρας</string>
+    <string name="btn_woman_newsletter">Γυναίκα</string>
+    <string name="btn_newsletter_signup">Εγγραφή</string>
+    <string name="promotional_text_second">για να απολαμβάνεις πρώτος τις καλύτερες προσφορές!</string>
+
+    <string name="third_group_name">Λογαριασμός</string>
+    <string name="btn_account_connect">Σύνδεση</string>
+    <string name="btn_new_account">Δημιουργία Λογαριασμού</string>
+    <string name="btn_recover_password">Ανάκτηση Κωδικού Πρόσβασης</string>
+    <string name="btn_my_orders">Οι παραγγελίες μου</string>
+    <string name="btn_profile_details">Λεπτομέριες προφίλ</string>
+    <string name="btn_logout">Αποσύνδεση</string>
+
+    <string name="btn_logout_success">Αποσυνδεθήκατε επιτυχώς</string>
+    <string name="btn_logout_fail">Ωχ κάτι πήγε στραβά, δοκίμασε πάλι</string>
+
+    <string name="newsletter_missing_email_msg">Το e-mail είναι κενό ή δεν είναι έγκυρο</string>
+    <string name="newsletter_success_msg">Επιτυχής Εγγραφή</string>
+
+    <string name="btn_home">Αρχική Σελίδα</string>
+</resources>

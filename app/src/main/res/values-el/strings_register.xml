@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="register_empty_email_msg">Το e-mail δεν μπορεί να είναι κενό!</string>
+    <string name="register_empty_password1_msg">Ο κωδικός δεν μπορεί να είναι κενός!</string>
+    <string name="register_empty_password2_msg">Η επιβεβαίωση κωδικού δεν μπορεί να είναι κενή!</string>
+    <string name="register_password_invalid_chars_msg">Ο κωδικός περιέχει μη επιτρεπτούς χαρακτήρες.</string>
+    <string name="register_password_invalid_length_msg">Ο κωδικός πρέπει να έχει μήκος τουλάχιστον 6(έξι) χαρακτήρες.</string>
+    <string name="register_passwords_not_matching_msg">Οι κωδικοί πρόσβασης στα Κώδικός και Επιβεβαίωση Κωδικού πεδία δεν ταιριάζουν.</string>
+    <string name="register_email_invalid_msg">Το e-mail δεν είναι έγκυρο!</string>
+    <string name="register_email_already_used_msg">Το e-mail που επιλέξατε χρησιμοποιείται από άλλο χρήστη. Σας παρακαλούμε ξαναπροσπαθήστε!</string>
+    <string name="register_success_msg">Επιτυχής Εγγραφή</string>
+    <string name="register_fail_msg">Ωχ, κάτι πήγε στραβά. Δοκιμάστε ξανά</string>
+    <string name="register_tab_title">Εγγραφη</string>
+    <string name="register_screen_title">Εγγραφή</string>
+
+    <string name="register_password1_hint">Κωδικός*</string>
+    <string name="register_password2_hint">Επιβεβαίωση κωδικού*</string>
+    <string name="register_firstname_hint">Όνομα</string>
+    <string name="register_lastname_hint">Επίθετο</string>
+    <string name="register_phone_hint">Κιν. τηλέφωνο</string>
+    <string name="register_btn_register">Εγγραφή</string>
+
+</resources>

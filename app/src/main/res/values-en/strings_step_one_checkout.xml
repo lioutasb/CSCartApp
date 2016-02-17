@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="step_one_screen_title">Step 1 - Setting Addresses</string>
+    <string name="step_one_next_btn">Next</string>
+</resources>

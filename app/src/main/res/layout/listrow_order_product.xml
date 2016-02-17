@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/productImg"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/sing"/>
+
+    <TextView
+        android:id="@+id/productTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/productImg"
+        android:text="Trefoil Hoodieaaaaaaaaaaaaaaa asd asd asd asd addsdf sd "
+        android:paddingLeft="5dp"
+        android:textSize="12sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/productId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/productImg"
+        android:paddingLeft="5dp"
+        android:layout_below="@+id/productTitle"
+        android:textSize="12sp"
+        android:text="hgfhgf"/>
+
+    <TextView
+        android:id="@+id/productAttributes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/productImg"
+        android:paddingLeft="5dp"
+        android:layout_below="@+id/productId"
+        android:textSize="12sp"
+        android:text="hgfhgf"/>
+
+    <TextView
+        android:id="@+id/productPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/productAttributes"
+        android:textSize="12sp"
+        android:text="hgfhgf"/>
+
+    <TextView
+        android:id="@+id/productAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:layout_below="@+id/productPrice"/>
+
+    <TextView
+        android:id="@+id/productTotalPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/productAmount"/>
+
+</RelativeLayout>

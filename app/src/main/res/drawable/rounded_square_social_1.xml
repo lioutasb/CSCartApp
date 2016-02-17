@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="@color/social_color_1"/>
+
+    <size android:height="@dimen/social_1_btn" android:width="@dimen/social_1_btn" />
+
+    <corners android:bottomRightRadius="10dp" android:bottomLeftRadius="10dp"
+        android:topLeftRadius="10dp" android:topRightRadius="10dp"/>
+</shape>

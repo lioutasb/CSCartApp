@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="register_empty_email_msg">The e-mail cannot be empty!</string>
+    <string name="register_empty_password1_msg">The password cannot be empty!</string>
+    <string name="register_empty_password2_msg">The Confirm password cannot be empty!</string>
+    <string name="register_password_invalid_chars_msg">The password contains characters that aren\'t allowed.</string>
+    <string name="register_password_invalid_length_msg">The password must be at least 6(six) characters long.</string>
+    <string name="register_passwords_not_matching_msg">The passwords on fields Password and Confirm password not matching.</string>
+    <string name="register_email_invalid_msg">Invalid e-mail!</string>
+    <string name="register_email_already_used_msg">Email Address Already in Use. Please try again!</string>
+    <string name="register_success_msg">Successful Registration</string>
+    <string name="register_fail_msg">Oops, something went wrong. Please try again</string>
+    <string name="register_tab_title">Register</string>
+    <string name="register_screen_title">Register</string>
+
+    <string name="register_password1_hint">Password*</string>
+    <string name="register_password2_hint">Confirm password*</string>
+    <string name="register_firstname_hint">Firstname</string>
+    <string name="register_lastname_hint">Lastname</string>
+    <string name="register_phone_hint">Mobile Phone</string>
+    <string name="register_btn_register">Register</string>
+
+</resources>

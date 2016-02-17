@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="step_three_screen_title">Step 3 - Payment Options</string>
+    <string name="step_three_method_title">Choose Payment Option:</string>
+    <string name="step_three_next_btn">Next</string>
+</resources>

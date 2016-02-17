@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="txt_product_code">Product code: %s</string>
+    <string name="txt_vat_for_price">(Including Tax)</string>
+    <string name="txt_related_promo">Επιλέξτε ακόμα ανάμεσα σε %d χρώμα:</string>
+    <string name="txt_amount_promo">Quantity:</string>
+    <string name="txt_freeship_promo">Free Shipping</string>
+    <string name="txt_availability_yes">✓Available - In stock</string>
+    <string name="txt_availability_no">✘Not Available - Out of stock</string>
+    <string name="txt_availability_time">This product will be available in %s</string>
+    <string name="txt_singup_promo">Notify me when this product is available</string>
+    <string name="btn_add_to_cart">Add to cart</string>
+    <string name="txt_description_promo">Description</string>
+    <string name="txt_features_promo">Features</string>
+    <string name="txt_phone_promo">☎Need help?\n</string>
+    <string name="txt_no_available_description">(No description available)</string>
+    <string name="txt_no_available_features">(No features available)</string>
+    <string name="txt_amount_promo_2">Quantity</string>
+    <string name="txt_give_amount">Give quantity:</string>
+    <string name="txt_other">Other</string>
+    <string name="txt_cancel">Cancel</string>
+    <string name="txt_share_title">Share this product from %s via</string>
+    <string name="txt_ok_btn_qty">OK</string>
+    <string name="txt_price_tier_title">Our quantity discounts:</string>
+    <string name="txt_price_tier_qty_title">Quantity:</string>
+    <string name="txt_price_tier_price_title">Price:</string>
+    <string formatted="false" name="txt_btn_cart_required_attr">The field %s is required</string>
+
+    <string name="txt_add_to_cart_success">Product successfully added to cart</string>
+    <string name="txt_add_to_cart_fail">Oops, something went wrong. Please try again</string>
+
+    <string name="msg_write_review_success_status_ava">Comment posted successfully</string>
+    <string name="msg_write_review_success_status_not_ava">Thank you for your post. Your post will be reviewed before being published</string>
+
+    <string name="msg_write_review_success_status_ava_R">Rating posted successfully</string>
+    <string name="msg_write_review_success_status_not_ava_R">Thank you for your rating. Your rating will be verified before published</string>
+
+    <string name="product_rating_type_B_write_title">New review</string>
+    <string name="product_rating_type_B_write_positive_btn">Submit</string>
+    <string name="product_rating_type_B_write_negative_btn">Cancel</string>
+    <string name="product_rating_type_B_read_title">Reviews</string>
+    <string name="product_rating_type_B_read_positive_btn">OK</string>
+    <string name="product_rating_type_B_read_no_reviews_msg">There are no comments at this time. Be the first to review this product</string>
+
+    <string formatted="false" name="product_rating_type_C_promo_title">(%d reviews)</string>
+    <string name="product_rating_type_C_write_title">New review</string>
+    <string name="product_rating_type_C_write_positive_btn">Submit</string>
+    <string name="product_rating_type_C_write_negative_btn">Cancel</string>
+    <string name="product_rating_type_C_read_title">Reviews</string>
+    <string name="product_rating_type_C_read_positive_btn">OK</string>
+    <string name="product_rating_type_C_read_no_reviews_msg">There are no comments at this time. Be the first to review this product</string>
+
+    <string name="product_rating_type_R_btn_write_txt">Rate</string>
+    <string name="product_rating_type_R_btn_read_txt">See the ratings</string>
+    <string name="product_rating_type_R_write_title">New rating</string>
+    <string name="product_rating_type_R_write_positive_btn">Submit</string>
+    <string name="product_rating_type_R_write_negative_btn">Cancel</string>
+    <string name="product_rating_type_R_read_title">Ratings</string>
+    <string name="product_rating_type_R_read_positive_btn">OK</string>
+    <string name="product_rating_type_R_read_no_reviews_msg">There are no ratings at the moment. Be the first to rate this product</string>
+
+    <string name="txt_related_products_title">See also</string>
+    <string name="txt_category">Category:</string>
+    <string name="txt_categories">Categories:</string>
+</resources>

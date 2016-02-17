@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="not_internet_title">Πρόβλημα στο δίκτυο</string>
+    <string name="not_internet_msg">Δεν υπάρχει κάποια ενεργή σύνδεση στο Internet. Παρακαλώ ρυθμίστε το δικτυό σας σωστά.</string>
+    <string name="not_internet_settings_btn">Ρυθμίσεις</string>
+    <string name="not_internet_ok_btn">OK</string>
+    <string name="search_text_on_box">Αναζήτηση στο %s</string>
+    <string name="back_toast_warning_msg">Πατήστε άλλη μια φορά για έξοδο</string>
+    <string name="search_hint">Αναζήτηση στο %s</string>
+
+
+    <string name="btn_txt_1">Αποστολή &amp; Παράδοση</string>
+    <string name="btn_txt_2">Επιστροφές - Ανταλλαγές</string>
+    <string name="btn_txt_3">Τρόποι πληρωμής</string>
+    <string name="btn_txt_4">Φόρμα Επιστροφής</string>
+    <string name="btn_txt_5">Επικοινωνία</string>
+
+
+    <string name="txt_phone_title">Εξυπηρέτηση πελατών:</string>
+    <string name="txt_store_hours_title">Δευτ-Παρ: 8:30 - 14:30, 18:00 - 22:00\nΣάβ: 8:30 - 14:30</string>
+    <string name="txt_btn_terms">Όροι χρήσης</string>
+    <string name="txt_btn_privacy">Προσωπικά δεδομένα</string>
+
+    <string name="txt_freeship_title">ΔΩΡΕΑΝ ΜΕΤΑΦΟΡΙΚΑ</string>
+    <string name="txt_freeship_body">Για αγορές άνω των %s.</string>
+
+    <string name="txt_categories_promotion">Κατηγορίες:</string>
+</resources>

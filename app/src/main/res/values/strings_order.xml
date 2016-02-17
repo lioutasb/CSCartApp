@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="order_screen_title">ΠΑΡΑΓΓΕΛΙΑ %s</string>
+    <string formatted="false" name="order_title">ΠΑΡΑΓΓΕΛΙΑ %s\n(%s)</string>
+    <string name="order_status_title">Κατάσταση:</string>
+    <string name="order_no_comments">(Δεν υπάρχουν σημειώσεις)</string>
+    <string name="order_payment_title">Τρόπος Πληρωμής:</string>
+    <string name="order_shipping_title">Τρόπος Αποστολής:</string>
+
+    <string name="order_customer_info">Πληροφορίες Πελάτη</string>
+    <string name="order_billing_info">Διεύθυνση Αποστολής Τιμολογίου</string>
+    <string name="order_shipping_info">Διεύθυνση Αποστολής Εμπορευμάτων</string>
+    <string name="order_products_info">Πληροφορίες Προϊόντων</string>
+    <string name="order_comments_info">Σημειώσεις Πελάτη</string>
+    <string name="order_summary_info">Περίληψη</string>
+
+    <string name="order_product_code">Κωδικός προϊόντος: %s</string>
+    <string name="order_unit_price">Τιμή μονάδας: %s</string>
+    <string name="order_qty">Ποσότητα: %s</string>
+    <string name="order_total_price">Τελική τιμή: %s</string>
+
+    <string name="order_btn_print_invoice_pdf">Εκτύπωση τιμολογίου (pdf)</string>
+
+</resources>

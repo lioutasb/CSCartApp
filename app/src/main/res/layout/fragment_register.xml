@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bootstrap="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <RelativeLayout
+            android:id="@+id/edittexts_rel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.beardedhen.androidbootstrap.BootstrapEditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:singleLine="true"
+                android:hint="Email*"
+                bootstrap:be_roundedCorners="true"
+                bootstrap:be_state="danger"/>
+
+            <View
+                android:id="@+id/emp1"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_below="@+id/email"/>
+
+            <com.beardedhen.androidbootstrap.BootstrapEditText
+                android:id="@+id/password1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:layout_below="@+id/emp1"
+                android:singleLine="true"
+                android:hint="@string/register_password1_hint"
+                bootstrap:be_roundedCorners="true"
+                bootstrap:be_state="danger"/>
+
+            <View
+                android:id="@+id/emp2"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_below="@+id/password1"/>
+
+            <com.beardedhen.androidbootstrap.BootstrapEditText
+                android:id="@+id/password2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:layout_below="@+id/emp2"
+                android:singleLine="true"
+                android:hint="@string/register_password2_hint"
+                bootstrap:be_roundedCorners="true"
+                bootstrap:be_state="danger"/>
+
+            <View
+                android:id="@+id/emp3"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_below="@+id/password2"/>
+
+            <com.beardedhen.androidbootstrap.BootstrapEditText
+                android:id="@+id/firstname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/emp3"
+                android:singleLine="true"
+                android:hint="@string/register_firstname_hint"
+                bootstrap:be_roundedCorners="true"
+                bootstrap:be_state="danger"/>
+
+            <View
+                android:id="@+id/emp4"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_below="@+id/firstname"/>
+
+            <com.beardedhen.androidbootstrap.BootstrapEditText
+                android:id="@+id/lastname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/emp4"
+                android:singleLine="true"
+                android:hint="@string/register_lastname_hint"
+                bootstrap:be_roundedCorners="true"
+                bootstrap:be_state="danger"/>
+
+            <View
+                android:id="@+id/emp5"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_below="@+id/lastname"/>
+
+            <com.beardedhen.androidbootstrap.BootstrapEditText
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/emp5"
+                android:singleLine="true"
+                android:inputType="phone"
+                android:hint="@string/register_phone_hint"
+                bootstrap:be_roundedCorners="true"
+                bootstrap:be_state="danger"/>
+        </RelativeLayout>
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/register_btn_register"
+            android:paddingTop="5dp"
+            android:gravity="center"
+            android:layout_below="@+id/edittexts_rel"
+            bootstrap:bb_type="danger"
+            bootstrap:bb_roundedCorners="true"
+            bootstrap:bb_size="normal"/>
+
+        <TextView
+            android:id="@+id/promText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:layout_below="@+id/btnRegister"
+            android:paddingBottom="5dp"
+            android:text="Τα οφέλη ενός εγγεγραμμένου μέλους\nΣύνδεση ανά πάσα στιγμή για έλεγχο των παραγγελιών σας\nΕξατομίκευση όλων των διαδικασιών\nΕπίσπευση μελλοντικών αγορών"/>
+
+
+    </RelativeLayout>
+</ScrollView>

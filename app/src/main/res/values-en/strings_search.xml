@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="search_threshold_msg">The search must contain at least 2 characters</string>
+    <string name="search_activity_title">Search</string>
+</resources>

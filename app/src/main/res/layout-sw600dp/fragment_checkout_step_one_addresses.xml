@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bootstrap="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
+            <include
+                android:id="@+id/billAddr"
+                layout="@layout/layout_billing_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+           <!-- <CheckBox
+                android:id="@+id/shipAddrCheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/billAddr"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:checked="true"
+                android:text="Διεύθυνση αποστολής εμπορευμάτων ΙΔΙΑ όπως παραπάνω"
+                android:textSize="12sp"
+                android:visibility="gone"/>
+
+            <include
+                android:id="@+id/shipAddr"
+                layout="@layout/layout_shipping_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/shipAddrCheckbox"
+                />-->
+
+
+
+
+        </RelativeLayout>
+            <com.beardedhen.androidbootstrap.BootstrapButton
+                android:id="@+id/btnGo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rel"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_alignParentRight="true"
+                android:text="@string/step_one_next_btn"
+                bootstrap:bb_icon_right="fa-chevron-circle-right"
+                bootstrap:bb_type="primary"
+                bootstrap:bb_roundedCorners="true"
+                bootstrap:bb_size="normal"/>
+        </RelativeLayout>
+    </ScrollView>
+
+    <com.todddavies.components.progressbar.ProgressWheel
+        xmlns:ProgressWheel="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/progressBarVP"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_centerInParent="true"
+        ProgressWheel:rimColor="#330097D6"
+        ProgressWheel:barColor="#0097D6"
+        ProgressWheel:barLength="60dp"
+        ProgressWheel:barWidth="2dp"
+        ProgressWheel:rimWidth="2dp"
+        ProgressWheel:contourColor="#330097D6"
+        android:visibility="gone"
+        />
+</RelativeLayout>

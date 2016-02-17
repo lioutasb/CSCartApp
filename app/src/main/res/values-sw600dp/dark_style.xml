@@ -1,0 +1,25 @@
+<resources>
+
+    <style name="DarkTheme.ActionBar" parent="Theme.AppCompat">
+        <item name="android:textColorSecondary">#ffff8800</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="actionModeBackground">@color/light_dark_purple</item>
+        <item name="actionModeSplitBackground">@color/grey_font</item>
+    </style>
+
+    <style name="DarkTheme.Popup" parent="ThemeOverlay.AppCompat.Dark">
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <style name="DarkTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textColor">@color/one_shade_of_the_fifty_shades_of_gray</item>
+        <item name="android:textColorLink">#ff0099cc</item>
+        <item name="android:textSize">18sp</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="vpiCirclePageIndicatorStyle">@style/CustomCirclePageIndicator</item>
+        <item name="vpiLinePageIndicatorStyle">@style/CustomLinePageIndicator</item>
+        <item name="vpiUnderlinePageIndicatorStyle">@style/CustomUnderlinePageIndicator</item>
+        <item name="spinnerStyle">@android:style/Widget.Holo.Spinner</item>
+    </style>
+</resources>

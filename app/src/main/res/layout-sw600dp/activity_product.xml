@@ -1,0 +1,695 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bootstrap="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include android:id="@+id/action_bar"
+        layout="@layout/toolbar"/>
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/nav_drawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/action_bar">
+
+        <RelativeLayout
+            android:id="@+id/content_frame"
+            android:background="@color/tone_of_white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <gr.plushost.prototypeapp.widgets.VerticalScrollView
+                android:id="@+id/scrollViewProd"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/rlBasic">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/product_img_size"
+                        android:id="@+id/lpager">
+
+                        <android.support.v4.view.ViewPager
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/pagerImg"/>
+
+                        <gr.plushost.prototypeapp.indicators.LinePageIndicator
+                            android:id="@+id/indicator"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="10dp"/>
+
+                        <RelativeLayout
+                            android:id="@+id/discLay"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="5dp"
+                            android:paddingLeft="5dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentLeft="true"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:id="@+id/textDisc"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:text="-30%"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                android:textColor="#FFFFFF"
+                                android:background="@drawable/bg_circle_orange"
+                                android:gravity="center_vertical|center_horizontal"/>
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Θήκη iPhone 5C σιλικόνης Puro Color bumper cover σε διάφανο μπλε χρώμα"
+                        android:id="@+id/textTitle"
+                        android:layout_below="@+id/lpager"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:textColor="@color/one_shade_of_the_fifty_shades_of_gray"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Κωδικός προϊόντος: 4797"
+                        android:id="@+id/textID"
+                        android:layout_below="@+id/textTitle"
+                        android:gravity="center"
+                        android:textColor="@color/dark_light_grey"
+                        android:layout_centerHorizontal="true"
+                        android:paddingTop="2dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text=""
+                        android:id="@+id/textCategoriesNames"
+                        android:layout_below="@+id/textID"
+                        android:gravity="center"
+                        android:textColor="@color/dark_light_grey"
+                        android:layout_centerHorizontal="true"
+                        android:paddingTop="1dp"
+                        android:paddingBottom="2dp"/>
+
+                    <RelativeLayout
+                        android:id="@+id/priceRel"
+                        android:layout_below="@id/textCategoriesNames"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" €31.9"
+                            android:paddingRight="5dp"
+                            android:id="@+id/textPrice"
+                            android:textSize="25dp"
+                            android:textColor="#FF6600"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="€50.00"
+                            android:id="@+id/textPriceOrigin"
+                            android:textSize="18dp"
+                            android:layout_alignBottom="@+id/textPrice"
+                            android:layout_toRightOf="@+id/textPrice"
+                            android:layout_marginBottom="3dp"
+                            android:textColor="@color/dark_light_grey"
+                            android:visibility="gone" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/txtVat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/txt_vat_for_price"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/priceRel"
+                        android:gravity="center"
+                        android:textColor="@color/dark_light_grey"/>
+
+                    <RelativeLayout
+                        android:id="@+id/ratingRel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtVat"
+                        android:layout_centerHorizontal="true">
+                        <RatingBar
+                            android:id="@+id/rating"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            style="?android:attr/ratingBarStyleSmall"
+                            android:numStars="5"
+                            android:rating="5.0"/>
+
+                        <TextView
+                            android:id="@+id/rating_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/rating"
+                            android:layout_centerVertical="true"
+                            android:paddingLeft="3dp"
+                            android:text="(500)"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/reviewsLay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ratingRel"
+                        android:layout_centerHorizontal="true">
+                        <TextView
+                            android:id="@+id/writeReview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/selector_txt_black_bg"
+                            android:text="Νέο σχόλιο"
+                            android:layout_centerVertical="true"
+                            android:padding="5dp"
+                            android:clickable="true"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/emptyView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/writeReview"
+                            android:layout_centerVertical="true"
+                            android:padding="5dp"
+                            android:text="|"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/readReviews"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/emptyView3"
+                            android:background="@drawable/selector_txt_black_bg"
+                            android:clickable="true"
+                            android:layout_centerVertical="true"
+                            android:padding="5dp"
+                            android:text="Δείτε τα σχόλια"
+                            android:textStyle="bold"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/colorsLay"
+                        android:layout_below="@+id/reviewsLay"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="10dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Επιλέξτε ακόμα ανάμεσα σε 4 χρώμα:"
+                            android:gravity="center"
+                            android:id="@+id/textColors"/>
+
+                        <gr.plushost.prototypeapp.widgets.ExpandableHeightGridView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/textColors"
+                            android:layout_centerHorizontal="true"
+                            android:id="@+id/gridColors"
+                            android:numColumns="4"
+                            android:gravity="center"
+                            android:paddingTop="2dp"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/posotitaLay"
+                        android:layout_below="@+id/colorsLay"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="@string/txt_amount_promo"
+                            android:id="@+id/textCount"
+                            android:layout_centerVertical="true"
+                            android:textColor="@color/dark_light_grey"/>
+
+                        <Spinner
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/editTextCount"
+                            android:layout_toRightOf="@+id/textCount"
+                            android:spinnerMode="dialog"
+                            android:gravity="center"
+                            android:background="@drawable/spinnercount_spinner_background_holo_light"/>
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/tierPricesRel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_below="@+id/posotitaLay"
+                        android:layout_centerHorizontal="true"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="@string/txt_freeship_promo"
+                        android:id="@+id/textFreeShip"
+                        android:layout_below="@+id/tierPricesRel"
+                        android:gravity="center"
+                        android:layout_centerHorizontal="true"
+                        android:textStyle="bold"
+                        android:paddingTop="5dp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="@string/txt_availability_yes"
+                        android:gravity="center"
+                        android:id="@+id/textAva"
+                        android:layout_below="@+id/textFreeShip"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="#008000"/>
+
+                    <TextView
+                        android:id="@+id/txtAvailableSince"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textAva"
+                        android:text="@string/txt_availability_time"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:visibility="gone"
+                        android:textColor="@color/dark_light_grey"/>
+
+                    <RelativeLayout
+                        android:id="@+id/availSignup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:layout_below="@+id/txtAvailableSince"
+                        android:visibility="gone">
+
+                        <CheckBox
+                            android:id="@+id/checkboxSingupForAva"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/txt_singup_promo"
+                            android:textColor="@color/dark_light_grey"
+                            android:layout_centerHorizontal="true"/>
+
+                        <RelativeLayout
+                            android:id="@+id/emailSingupRel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_below="@+id/checkboxSingupForAva"
+                            android:visibility="gone">
+
+                            <com.beardedhen.androidbootstrap.BootstrapEditText
+                                android:id="@+id/editTxtEmailSignup"
+                                android:layout_width="200dp"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/email_hint_example_editext"
+                                android:layout_centerVertical="true"
+                                bootstrap:be_roundedCorners="true"
+                                bootstrap:be_state="warning"
+                                android:visibility="visible"/>
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/buttonGoEmail"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                bootstrap:bb_icon_left="fa-arrow-right"
+                                bootstrap:bb_type="info"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="8dp"
+                                bootstrap:bb_roundedCorners="true"
+                                android:layout_toRightOf="@+id/editTxtEmailSignup"
+                                bootstrap:bb_size="small"/>
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/params"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:orientation="vertical"
+                        android:layout_below="@+id/availSignup"/>
+
+                    <RelativeLayout
+                        android:id="@+id/cartLay2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/params"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="5dp"
+                        android:visibility="visible">
+
+                        <com.beardedhen.androidbootstrap.BootstrapButton
+                            android:id="@+id/buttonBuy"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/btn_add_to_cart"
+                            android:gravity="center"
+                            bootstrap:bb_icon_left="fa-shopping-cart"
+                            bootstrap:bb_type="warning"
+                            bootstrap:bb_roundedCorners="true"
+                            bootstrap:bb_size="normal"/>
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/txtPromo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/cartLay2"
+                        android:paddingTop="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:visibility="gone"
+                        android:text="FREE US shipping over $100!Orders within next 2 days will be shipped on Monday"/>
+
+                    <RelativeLayout
+                        android:id="@+id/emptyRel11"
+                        android:layout_below="@+id/txtPromo"
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"/>
+
+                    <RelativeLayout
+                        android:id="@+id/descLay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/emptyRel11"
+                        android:paddingBottom="4dp"
+                        android:paddingRight="4dp"
+                        android:paddingLeft="4dp"
+                        android:paddingTop="3dp"
+                        android:background="@drawable/shadow_black"
+                        android:visibility="visible">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/gray">
+
+                            <RelativeLayout
+                                android:id="@+id/ldescH"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:onClick="onDescClick"
+                                android:background="@drawable/selector_exp_list">
+
+                                <ImageView
+                                    android:id="@+id/arrow1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/arrow_up_small"
+                                    android:paddingRight="8dp"
+                                    android:paddingLeft="8dp"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_centerVertical="true"/>
+
+                                <TextView
+                                    android:id="@+id/descH"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/txt_description_promo"
+                                    android:layout_toRightOf="@+id/arrow1"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    android:layout_centerVertical="true"/>
+
+                            </RelativeLayout>
+
+                            <View
+                                android:id="@+id/firstEmp"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="#C7C7C7"
+                                android:layout_below="@+id/ldescH"/>
+
+                            <RelativeLayout
+                                android:id="@+id/ldesc"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_below="@+id/firstEmp">
+
+                                <ImageView
+                                    android:id="@+id/arrowtmp1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/arrow_up_small"
+                                    android:paddingRight="8dp"
+                                    android:paddingLeft="8dp"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_centerVertical="true"
+                                    android:visibility="invisible"/>
+
+                                <WebView
+                                    android:id="@+id/desc"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_toRightOf="@+id/arrowtmp1"
+                                    android:text="ώστε η περιμετρική αυτή κάλυψη να προστατεύει τη συσκευή στο σύνολο της, επιτρέποντας την πλήρη πρόσβαση στην οθόνη και στις κύριες λειτουργίες της. Η κατασκευή του πλαισίου BUMPER από υψηλής ποιότητας πλαστικό και σιλικόνη εξασφαλίζει τη μέγιστη προστασία για την αγαπημένη σας σ"
+                                    android:textAppearance="?android:attr/textAppearanceSmall"/>
+                            </RelativeLayout>
+
+                            <View
+                                android:id="@+id/secEmp"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="#C7C7C7"
+                                android:layout_below="@+id/ldesc"/>
+
+                            <RelativeLayout
+                                android:id="@+id/ltexnH"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/secEmp"
+                                android:onClick="onTexnClick"
+                                android:background="@drawable/selector_exp_list">
+
+                                <ImageView
+                                    android:id="@+id/arrow2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/arrow_up_small"
+                                    android:paddingRight="8dp"
+                                    android:paddingLeft="8dp"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_centerVertical="true"/>
+
+                                <TextView
+                                    android:id="@+id/texnH"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/txt_features_promo"
+                                    android:layout_toRightOf="@+id/arrow2"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    android:layout_centerVertical="true"/>
+
+                            </RelativeLayout>
+
+                            <View
+                                android:id="@+id/thirdEmp"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="#C7C7C7"
+                                android:layout_below="@+id/ltexnH"/>
+
+                            <RelativeLayout
+                                android:id="@+id/ltexn"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/thirdEmp">
+
+                                <ImageView
+                                    android:id="@+id/arrowtmp2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/arrow_up_small"
+                                    android:paddingRight="8dp"
+                                    android:paddingLeft="8dp"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_centerVertical="true"
+                                    android:visibility="invisible"/>
+
+                                <TextView
+                                    android:id="@+id/texn"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="ώστε η περιμετρική αυτή κάλυψη να προστατεύει τη συσκευή στο σύνολο της, επιτρέποντας την πλήρη πρόσβαση στην οθόνη και στις κύριες λειτουργίες της. Η κατασκευή του πλαισίου BUMPER από υψηλής ποιότητας πλαστικό και σιλικόνη εξασφαλίζει τη μέγιστη προστασία για την αγαπημένη σας σ"
+                                    android:layout_toRightOf="@+id/arrowtmp2"
+                                    android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+                            </RelativeLayout>
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/relatedTitleRel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="10dp"
+                        android:layout_below="@+id/descLay">
+
+                        <TextView
+                            android:id="@+id/relatedTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/txt_related_products_title"
+                            android:textStyle="bold"
+                            android:textSize="18sp"
+                            android:gravity="center"
+                            android:layout_centerVertical="true"
+                            android:layout_centerHorizontal="true"/>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_toLeftOf="@+id/relatedTitle"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="15dp"
+                            android:background="@color/one_shade_of_the_fifty_shades_of_gray"/>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_toRightOf="@+id/relatedTitle"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="15dp"
+                            android:background="@color/one_shade_of_the_fifty_shades_of_gray"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/relatedRel"
+                        android:layout_width="match_parent"
+                        android:layout_height="295dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingBottom="5dp"
+                        android:layout_below="@+id/relatedTitleRel">
+
+                        <android.support.v4.view.ViewPager
+                            android:id="@+id/relaredViewPager"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"/>
+
+                        <ImageView
+                            android:id="@+id/leftBtn"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="2dp"
+                            android:src="@drawable/arrow_left_medium_brown"
+                            android:background="@drawable/selector_related_indicator_btns"
+                            android:clickable="true"
+                            android:onClick="previousPage"/>
+
+                        <ImageView
+                            android:id="@+id/rightBtn"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="2dp"
+                            android:src="@drawable/arrow_right_medium_brown"
+                            android:background="@drawable/selector_related_indicator_btns"
+                            android:clickable="true"
+                            android:onClick="nextPage"/>
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="☎Θέλετε βοήθεια;\n801-11-90-200"
+                        android:id="@+id/textPhone"
+                        android:gravity="center"
+                        android:layout_below="@+id/relatedRel"
+                        android:layout_centerHorizontal="true"
+                        android:autoLink = "phone"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"/>
+
+                </RelativeLayout>
+            </gr.plushost.prototypeapp.widgets.VerticalScrollView>
+
+            <ProgressBar
+                android:id="@+id/progressBarLoading"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:indeterminateDrawable="@drawable/progress_blue"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/nav_drawer_fragment"
+            android:layout_width="@dimen/nav_drawer_size"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"/>
+
+    </android.support.v4.widget.DrawerLayout>
+
+</RelativeLayout>

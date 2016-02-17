@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="settings_screen_name">Ρυθμίσεις</string>
+    <string name="settings_langs_title">Γλώσσες</string>
+    <string name="settings_curr_name">Νόμισμα</string>
+
+    <string name="settings_general_group_name">Γενικά</string>
+    <string name="settings_help_group_name">Βοήθεια</string>
+
+    <string name="settings_lang_item_name">Γλώσσα</string>
+    <string name="settings_currency_item_name">Νόμισμα</string>
+    <string name="settings_about_item_name">Πληροφορίες εφαρμογής</string>
+    <string name="settings_intro_item_name">Οθόνη έναρξης</string>
+    <string name="settings_intro_item_desc">Δείτε ξανά την οθόνη έναρξης της εφαρμογής</string>
+    <string name="settings_search_history_item_name">Εκκαθάριση ιστορικού αναζήτησης</string>
+    <string name="settings_search_history_item_desc">Καθαρίστε το ιστορικό αναζήτησης</string>
+
+    <string name="settings_clear_history_msg">Εκκαθάριση ιστορικού αναζήτησης επιτυχής.</string>
+
+    <string name="settings_feedback_item_name">Πείτε μας την γνώμη σας</string>
+    <string name="settings_feedback_item_desc">Πείτε μας ότι σας αρέσει ή όχι σχετικά με την εφαρμογή</string>
+    <string name="settings_openlibs_item_name">Open Source Libraries</string>
+
+    <string name="settings_about_version">Έκδοση</string>
+    <string name="settings_about_developed_by">Κατασκευή</string>
+    <string name="settings_about_developed_for">για λογαριασμό της εταιρείας\nPlushost.gr\n(Κατασκευή e-shop/eCommerce)</string>
+</resources>

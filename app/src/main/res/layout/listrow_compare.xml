@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ProgressWheel="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:id="@+id/thumbnailLay">
+
+        <ImageView
+            android:id="@+id/thumbnail"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:scaleType="centerInside"/>
+
+        <com.todddavies.components.progressbar.ProgressWheel
+            android:id="@+id/progressBarImgProdcuts"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            ProgressWheel:rimColor="#330097D6"
+            ProgressWheel:barColor="#0097D6"
+            ProgressWheel:barLength="3dp"
+            ProgressWheel:barWidth="1dp"
+            ProgressWheel:rimWidth="1dp"
+            ProgressWheel:contourColor="#330097D6"/>
+
+        <TextView
+            android:id="@+id/txtDiscount"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:text="-300%"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/bg_circle_orange"
+            android:gravity="center_vertical|center_horizontal"/>
+
+    </RelativeLayout>
+
+
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@+id/thumbnailLay"
+        android:layout_centerHorizontal="true"
+        android:text="asasdadsasdd"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/txtPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@+id/txtTitle"
+        android:layout_centerHorizontal="true"
+        android:text="10$"
+        android:textSize="18sp"/>
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        xmlns:bootstrap="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/btnAddToCart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtPrice"
+        android:text="@string/btn_add_to_cart"
+        bootstrap:bb_icon_left="fa-shopping-cart"
+        bootstrap:bb_type="warning"
+        bootstrap:bb_roundedCorners="true"
+        bootstrap:bb_size="small"/>
+
+    <TextView
+        android:id="@+id/txtShortDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnAddToCart"
+        android:layout_centerHorizontal="true"
+        android:text="10$"
+        android:textSize="14sp"
+        android:maxLines="3"
+        android:ellipsize="end"/>
+
+    <TextView
+        android:id="@+id/txtFeatures"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtShortDesc"
+        android:paddingTop="10dp"
+        android:text="10a$"
+        android:textSize="14sp"/>
+
+</RelativeLayout>

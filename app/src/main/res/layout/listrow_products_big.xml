@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ProgressWheel="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_listrow_products"
+    android:paddingBottom="10dp"
+    android:paddingTop="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:id="@+id/thumbnailLay">
+
+        <ImageView
+            android:id="@+id/thumbnail"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_alignParentLeft="true"
+            android:scaleType="centerInside"/>
+
+        <com.todddavies.components.progressbar.ProgressWheel
+            android:id="@+id/progressBarImgProdcuts"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            ProgressWheel:rimColor="#330097D6"
+            ProgressWheel:barColor="#0097D6"
+            ProgressWheel:barLength="3dp"
+            ProgressWheel:barWidth="1dp"
+            ProgressWheel:rimWidth="1dp"
+            ProgressWheel:contourColor="#330097D6"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/orinPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/thumbnailLay"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:text="asd"
+        android:textColor="@color/orange"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/retPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/orinPrice"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/dark_light_grey"
+        android:textSize="17sp"
+        android:text="sddf"/>
+
+    <TextView
+        android:id="@+id/titleProd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/retPrice"
+        android:layout_centerHorizontal="true"
+        android:text="geia sou prod"
+        android:textColor="#4B4B4B"
+        android:textSize="17sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:paddingBottom="5dp"/>
+
+    <TextView
+        android:id="@+id/availColors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleProd"
+        android:layout_centerHorizontal="true"
+        android:text="Διαθέσιμο σε ακόμη 7 χρώματα"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/discount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/availColors"
+        android:layout_centerHorizontal="true"
+        android:text="ΕΚΠΤΩΣΗ 29%"
+        android:typeface="serif"
+        android:background="@drawable/bg_unfilled_square"
+        android:paddingTop="5dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:paddingBottom="5dp"/>
+
+    <TextView
+        android:id="@+id/freeshipText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/discount"
+        android:layout_centerHorizontal="true"
+        android:text="@string/txt_freeship_promo"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:textColor="@color/red"/>
+</RelativeLayout>

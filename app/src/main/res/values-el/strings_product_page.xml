@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="txt_product_code">Κωδικός προϊόντος: %s</string>
+    <string name="txt_vat_for_price">(Συμπεριλαμβανομένου Φόρου)</string>
+    <string name="txt_related_promo">Επιλέξτε ακόμα ανάμεσα σε %d χρώμα:</string>
+    <string name="txt_amount_promo">Ποσότητα:</string>
+    <string name="txt_freeship_promo">Δωρεάν μεταφορικά</string>
+    <string name="txt_availability_yes">✓Διαθέσιμο - Σε απόθεμα</string>
+    <string name="txt_availability_no">✘Μη Διαθέσιμο - Δεν υπάρχει απόθεμα</string>
+    <string name="txt_availability_time">Αυτό το προϊόν θα είναι διαθέσιμο στις %s</string>
+    <string name="txt_singup_promo">Ειδοποίηση όταν το προϊόν είναι ξανά διαθέσιμο</string>
+    <string name="btn_add_to_cart">Προσθήκη στο καλάθι</string>
+    <string name="txt_description_promo">Περιγραφή</string>
+    <string name="txt_features_promo">Λεπτομέρειες</string>
+    <string name="txt_phone_promo">☎Θέλετε βοήθεια;\n</string>
+    <string name="txt_no_available_description">(Δεν υπάρχει διαθέσιμη περιγραφή)</string>
+    <string name="txt_no_available_features">(Δεν υπάρχουν διαθέσιμες πληροφορίες)</string>
+    <string name="txt_amount_promo_2">Ποσότητα</string>
+    <string name="txt_give_amount">Δώστε αριθμό:</string>
+    <string name="txt_other">Άλλο</string>
+    <string name="txt_cancel">Άκυρο</string>
+    <string name="txt_share_title">Κοινοποίησε το προϊόν του %s μέσω</string>
+    <string name="txt_ok_btn_qty">OK</string>
+    <string name="txt_price_tier_title">Οι εκπτώσεις της ποσότητα μας:</string>
+    <string name="txt_price_tier_qty_title">Ποσότητα:</string>
+    <string name="txt_price_tier_price_title">Τιμή:</string>
+    <string formatted="false" name="txt_btn_cart_required_attr">Το πεδίο %s είναι υποχρεωτικό</string>
+
+    <string name="txt_add_to_cart_success">Το προϊόν προστέθηκε επιτυχώς στο καλάθι σας</string>
+    <string name="txt_add_to_cart_fail">Ωχ, κάτι πήγε στραβά. Δοκιμάστε ξανά</string>
+
+    <string name="msg_write_review_success_status_ava">Το σχόλιο καταχωρήθηκε επιτυχώς</string>
+    <string name="msg_write_review_success_status_not_ava">Ευχαριστούμε για την δημοσίευση σας. Η δημοσίευσή σας θα ελεγχθεί προτού δημοσιευτεί</string>
+
+    <string name="msg_write_review_success_status_ava_R">Η βαθμολογία σας καταχωρήθηκε επιτυχώς</string>
+    <string name="msg_write_review_success_status_not_ava_R">Σας ευχαριστούμε για τη βαθμολογία σας. Η βαθμολογία σας θα ελεγχθεί προτού δημοσιευτεί</string>
+
+    <string name="product_rating_type_B_write_title">Nέο σχόλιο</string>
+    <string name="product_rating_type_B_write_positive_btn">Υποβολή</string>
+    <string name="product_rating_type_B_write_negative_btn">Άκυρο</string>
+    <string name="product_rating_type_B_read_title">Κριτικές</string>
+    <string name="product_rating_type_B_read_positive_btn">OK</string>
+    <string name="product_rating_type_B_read_no_reviews_msg">Δεν υπάρχουν σχόλια προς το παρόν. Γίνε ο πρώτος που θα σχολιάσει το προϊόν</string>
+
+    <string formatted="false" name="product_rating_type_C_promo_title">(%d κριτικές)</string>
+    <string name="product_rating_type_C_write_title">Nέο σχόλιο</string>
+    <string name="product_rating_type_C_write_positive_btn">Υποβολή</string>
+    <string name="product_rating_type_C_write_negative_btn">Άκυρο</string>
+    <string name="product_rating_type_C_read_title">Κριτικές</string>
+    <string name="product_rating_type_C_read_positive_btn">OK</string>
+    <string name="product_rating_type_C_read_no_reviews_msg">Δεν υπάρχουν σχόλια προς το παρόν. Γίνε ο πρώτος που θα σχολιάσει το προϊόν</string>
+
+    <string name="product_rating_type_R_btn_write_txt">Βαθμολογήστε</string>
+    <string name="product_rating_type_R_btn_read_txt">Δείτε τις βαθμολογίες</string>
+    <string name="product_rating_type_R_write_title">Nέο σχόλιο</string>
+    <string name="product_rating_type_R_write_positive_btn">Υποβολή</string>
+    <string name="product_rating_type_R_write_negative_btn">Άκυρο</string>
+    <string name="product_rating_type_R_read_title">Κριτικές</string>
+    <string name="product_rating_type_R_read_positive_btn">OK</string>
+    <string name="product_rating_type_R_read_no_reviews_msg">Δεν υπάρχουν βαθμολογίες προς το παρόν. Γίνε ο πρώτος που θα βαθμολογίσει το προϊόν</string>
+
+    <string name="txt_related_products_title">Δείτε επίσης</string>
+    <string name="txt_category">Κατηγορία:</string>
+    <string name="txt_categories">Κατηγορίες:</string>
+</resources>

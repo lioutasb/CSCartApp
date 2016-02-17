@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="gr.plushost.prototypeapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+ 
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:theme="@style/BasicTheme"
+        android:label="@string/store_name"
+        android:name=".aplications.StoreApplication"
+        android:configChanges="keyboardHidden|orientation|screenSize"
+        >
+        <activity
+            android:name=".activities.SplashScreenActivity"
+            android:label="@string/store_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/TransparentTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.MainActivity"
+            android:label="@string/store_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name=".activities.CategoriesActivity"
+            android:label="@string/store_name"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name=".activities.ProductsActivity"
+            android:label="@string/store_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+            <meta-data android:name="android.app.searchable"
+                android:resource="@xml/searchable"/>
+        </activity>
+
+        <activity
+            android:name=".activities.CompareActivity"
+            android:label="@string/store_name"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name=".activities.ProductActivity"
+            android:label="@string/store_name"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name=".activities.FullScreenImageActivity"
+            android:label="@string/store_name"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+        </activity>
+
+        <activity android:name=".activities.SearchActivity"
+            android:label="@string/store_name"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.app.default_searchable"
+                android:value=".activities.ProductsActivity" />
+        </activity>
+
+        <activity android:name=".activities.LoginActivity"
+            android:label="@string/store_name"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activities.ProfileActivity"
+            android:label="@string/store_name"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activities.SettingsActivity"
+            android:label="@string/store_name"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activities.ShoppingCartActivity"
+            android:label="@string/store_name"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activities.CustomerOrdersActivity"
+            android:label="@string/store_name"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activities.CustomerOrderActivity"
+            android:label="@string/store_name"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activities.ForgotPasswordActivity"
+            android:label="@string/store_name"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activities.CheckoutActivity"
+            android:label="@string/store_name"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activities.WebViewActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activities.IntroActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activities.DrawerActivity"
+            android:screenOrientation="portrait"/>
+
+        <provider android:name=".providers.RecentSuggestionProvider"
+            android:authorities="RecentSuggestionProvider.plushost.gr" />
+    </application>
+
+</manifest>

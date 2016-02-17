@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="order_screen_title">ORDER %s</string>
+    <string formatted="false" name="order_title">ORDER %s\n(%s)</string>
+    <string name="order_status_title">Status:</string>
+    <string name="order_no_comments">(No comments)</string>
+    <string name="order_payment_title">Payment Method:</string>
+    <string name="order_shipping_title">Shipping Method:</string>
+
+    <string name="order_customer_info">Customer Information</string>
+    <string name="order_billing_info">Billing Address</string>
+    <string name="order_shipping_info">Shipping Address</string>
+    <string name="order_products_info">Products Information</string>
+    <string name="order_comments_info">Customer Notes</string>
+    <string name="order_summary_info">Summary</string>
+
+    <string name="order_product_code">Product code: %s</string>
+    <string name="order_unit_price">Unit price: %s</string>
+    <string name="order_qty">Quantity: %s</string>
+    <string name="order_total_price">Total price: %s</string>
+
+    <string name="order_btn_print_invoice_pdf">Print invoice (pdf)</string>
+
+</resources>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    card_view:cardCornerRadius="4dp"
+    card_view:cardUseCompatPadding="true"
+    card_view:cardElevation="4dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <RelativeLayout
+            android:id="@+id/imgRel"
+            android:layout_width="@dimen/cart_product_img_size"
+            android:layout_height="@dimen/cart_product_img_size"
+            android:layout_centerVertical="true">
+
+            <com.pkmmte.view.CircularImageView
+                android:id="@+id/productImg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/sing"
+                android:scaleType="fitCenter"
+                card_view:border="true"
+                card_view:border_width="1dp"
+                card_view:shadow="true"/>
+
+            <com.todddavies.components.progressbar.ProgressWheel
+                android:id="@+id/progressBarVP"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_centerInParent="true"
+                card_view:rimColor="#330097D6"
+                card_view:barColor="#0097D6"
+                card_view:barLength="3dp"
+                card_view:barWidth="1dp"
+                card_view:rimWidth="1dp"
+                card_view:contourColor="#330097D6"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/productTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imgRel"
+            android:text="Trefoil Hoodieaaaaaaaaaaaaaaa asd asd asd asd addsdf sd "
+            android:layout_toLeftOf="@+id/card_header_button_overflow"
+            android:paddingLeft="5dp"
+            android:textStyle="bold"/>
+
+        <ImageButton
+            android:id="@+id/card_header_button_overflow"
+            android:background="@drawable/card_menu_button_rounded_overflow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"/>
+
+        <TextView
+            android:id="@+id/productId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imgRel"
+            android:paddingLeft="5dp"
+            android:layout_toLeftOf="@+id/card_header_button_overflow"
+            android:layout_below="@+id/productTitle"
+            android:text="hgfhgf"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/productAttributes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imgRel"
+            android:layout_toLeftOf="@+id/card_header_button_overflow"
+            android:paddingLeft="5dp"
+            android:layout_below="@+id/productId"
+            android:text="hgfhgf"/>
+
+        <TextView
+            android:id="@+id/productPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/productAttributes"
+            android:text="hgfhgf"/>
+
+        <TextView
+            android:id="@+id/productAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:layout_below="@+id/productPrice"/>
+
+        <TextView
+            android:id="@+id/productTotalPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_below="@+id/productAmount"/>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

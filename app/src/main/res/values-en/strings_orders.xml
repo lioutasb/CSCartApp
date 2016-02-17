@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="orders_screen_title">Orders</string>
+    <string name="orders_no_orders">No orders found</string>
+
+    <string name="orders_search_title">Search options</string>
+    <string name="orders_search_total">Total (%s)</string>
+    <string name="orders_search_total_from">From</string>
+    <string name="orders_search_total_to">To</string>
+    <string name="orders_search_status">Order Status</string>
+    <string name="orders_search_id">Order ID</string>
+    <string name="orders_search_id_ex">ex. 98</string>
+    <string name="orders_search_btn">Search</string>
+    <string name="orders_total_price">Total: %s</string>
+    <string formatted="false" name="orders_title">ORDER %s\n(%s)</string>
+</resources>

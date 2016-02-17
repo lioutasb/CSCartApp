@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="profile_lastname_fail_msg">Το επίθετο δεν μπορεί να είναι κενό</string>
+    <string name="profile_firstname_fail_msg">Το όνομα δεν μπορεί να είναι κενό</string>
+    <string name="profile_phone_fail_msg">Το κιν. τηλέφωνο δεν μπορεί να είναι κενό</string>
+    <string name="profile_zipcode_fail_msg">Ο Τ.Κ. δεν μπορεί να είναι κενός</string>
+    <string name="profile_zipcode_not_valid_msg">Ο Τ.Κ. δεν είναι έγκυρος</string>
+    <string name="profile_city_fail_msg">Η πόλη δεν μπορεί να είναι κενή</string>
+    <string name="profile_address_fail_msg">Η διεύθυνση δεν μπορεί να είναι κενή</string>
+    <string name="profile_region_fail_msg">Η περιοχή δεν μπορεί να είναι κενή</string>
+    <string name="profile_btn_save_success">Οι αλλαγές αποθηκέυτηκαν επιτυχώς</string>
+    <string name="profile_btn_save_fail">Ωχ, κάτι πήγε στραβά. Δοκιμάστε ξανά</string>
+    <string name="profile_screen_title">Προφίλ</string>
+
+    <string name="profile_shipping_address_title">Διεύθυνση αποστολής τιμολογίου</string>
+    <string name="profile_shipping_address_firstname">Όνομα:*</string>
+    <string name="profile_shipping_address_lastname">Επίθετο:*</string>
+    <string name="profile_shipping_address_address">Διεύθυνση:*</string>
+    <string name="profile_shipping_address_city">Πόλη:*</string>
+    <string name="profile_shipping_address_zipcode">T.K.:*</string>
+    <string name="profile_shipping_address_country">Χώρα:*</string>
+    <string name="profile_shipping_address_state">Περιοχή:*</string>
+    <string name="profile_shipping_address_phone">Κιν. Τηλέφωνο:*</string>
+    <string name="profile_save">Αποθήκευση</string>
+
+</resources>

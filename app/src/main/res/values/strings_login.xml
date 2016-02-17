@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="login_invalid_email_msg">Μη έγκυρο e-mail</string>
+    <string name="login_password_empty_msg">Ο κωδικός δεν μπορεί να είναι κενός</string>
+    <string name="login_fail_msg">Είτε το E-mail Χρήστη είτε ο Κωδικός Πρόσβασης είναι εσφαλμένα. Προσπαθήστε ξανά!</string>
+    <string name="login_success_msg">Επιτυχής Σύνδεση</string>
+    <string name="login_tab_title">Συνδεση</string>
+    <string name="login_screen_title">Σύνδεση</string>
+    <string name="login_btn_login">Σύνδεση</string>
+    <string name="login_btn_pass_recovery">Ξεχάσατε τον κωδικό;</string>
+    <string name="login_btn_show_pass">Εμφάνιση Κωδικού</string>
+    <string name="login_hint_password">Κωδικός</string>
+
+</resources>

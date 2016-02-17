@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bootstrap="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/action_bar"
+        layout="@layout/toolbar" />
+
+    <gr.plushost.prototypeapp.widgets.LockableScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/action_bar">
+
+        <RelativeLayout
+            android:id="@+id/content_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/gray"
+            android:padding="10dp">
+
+            <RelativeLayout
+                android:id="@+id/addressRel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp">
+
+                <TextView
+                    android:id="@+id/addressTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/profile_shipping_address_title"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/addressUsernameTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/addressTitle"
+                    android:text="@string/profile_shipping_address_firstname"
+                    android:textSize="18sp" />
+
+                <com.beardedhen.androidbootstrap.BootstrapEditText
+                    android:id="@+id/addressUsername"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/addressUsernameTitle"
+                    android:hint="Steve"
+                    bootstrap:be_roundedCorners="true"
+                    bootstrap:be_state="warning" />
+
+                <TextView
+                    android:id="@+id/addressUsersernameTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/addressUsername"
+                    android:text="@string/profile_shipping_address_lastname"
+                    android:textSize="18sp" />
+
+                <com.beardedhen.androidbootstrap.BootstrapEditText
+                    android:id="@+id/addressUsersername"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/addressUsersernameTitle"
+                    android:hint="Anderson"
+                    bootstrap:be_roundedCorners="true"
+                    bootstrap:be_state="warning" />
+
+                <TextView
+                    android:id="@+id/addressUserAddressTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/addressUsersername"
+                    android:text="@string/profile_shipping_address_address"
+                    android:textSize="18sp" />
+
+                <com.beardedhen.androidbootstrap.BootstrapEditText
+                    android:id="@+id/addressUserAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/addressUserAddressTitle"
+                    android:hint="Kingston 12401"
+                    bootstrap:be_roundedCorners="true"
+                    bootstrap:be_state="warning" />
+
+                <TextView
+                    android:id="@+id/addressUserCityTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/addressUserAddress"
+                    android:text="@string/profile_shipping_address_city"
+                    android:textSize="18sp" />
+
+                <com.beardedhen.androidbootstrap.BootstrapEditText
+                    android:id="@+id/addressUserCity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/addressUserCityTitle"
+                    android:hint="New York"
+                    bootstrap:be_roundedCorners="true"
+                    bootstrap:be_state="warning" />
+
+                <TextView
+                    android:id="@+id/addressUserTKTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/addressUserCity"
+                    android:text="@string/profile_shipping_address_zipcode"
+                    android:textSize="18sp" />
+
+                <com.beardedhen.androidbootstrap.BootstrapEditText
+                    android:id="@+id/addressUserTK"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/addressUserTKTitle"
+                    android:hint="10003"
+                    bootstrap:be_roundedCorners="true"
+                    bootstrap:be_state="warning" />
+
+                <TextView
+                    android:id="@+id/addressUserCountryTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/addressUserTK"
+                    android:text="@string/profile_shipping_address_country"
+                    android:textSize="18sp" />
+
+                <Spinner
+                    android:id="@+id/spinnerUserCountry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/addressUserCountryTitle"
+                    android:background="@drawable/spinnercount_spinner_background_holo_light"
+                    android:gravity="center"
+                    android:spinnerMode="dialog" />
+
+                <TextView
+                    android:id="@+id/addressUserRegionTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/spinnerUserCountry"
+                    android:text="@string/profile_shipping_address_state"
+                    android:textSize="18sp" />
+
+                <Spinner
+                    android:id="@+id/spinnerUserRegion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/addressUserRegionTitle"
+                    android:background="@drawable/spinnercount_spinner_background_holo_light"
+                    android:gravity="center"
+                    android:spinnerMode="dialog" />
+
+                <com.beardedhen.androidbootstrap.BootstrapEditText
+                    android:id="@+id/addressUserRegion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/spinnerUserRegion"
+                    android:hint="Illinois"
+                    bootstrap:be_roundedCorners="true"
+                    bootstrap:be_state="warning" />
+
+                <TextView
+                    android:id="@+id/addressUserPhoneTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/addressUserRegion"
+                    android:text="@string/profile_shipping_address_phone"
+                    android:textSize="18sp" />
+
+                <com.beardedhen.androidbootstrap.BootstrapEditText
+                    android:id="@+id/addressUserPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/addressUserPhoneTitle"
+                    android:hint="6900000000"
+                    android:inputType="phone"
+                    bootstrap:be_roundedCorners="true"
+                    bootstrap:be_state="warning" />
+
+                <TextView
+                    android:id="@+id/addressUserSexTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/addressUserPhone"
+                    android:text="Φύλο:*"
+                    android:textSize="18sp"
+                    android:visibility="gone" />
+
+                <Spinner
+                    android:id="@+id/spinnerUserSex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/addressUserSexTitle"
+                    android:background="@drawable/spinnercount_spinner_background_holo_light"
+                    android:gravity="center"
+                    android:spinnerMode="dialog"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+            <com.beardedhen.androidbootstrap.BootstrapButton
+                android:id="@+id/profileSave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/addressRel"
+                android:text="@string/profile_save"
+                bootstrap:bb_icon_left="fa-save"
+                bootstrap:bb_roundedCorners="true"
+                bootstrap:bb_type="primary" />
+
+        </RelativeLayout>
+    </gr.plushost.prototypeapp.widgets.LockableScrollView>
+
+    <RelativeLayout
+        android:id="@+id/progressBarRel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/action_bar"
+        android:visibility="gone">
+        <ProgressBar
+            android:id="@+id/progressBarLoading"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminateDrawable="@drawable/progress_blue"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+</RelativeLayout>

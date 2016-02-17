@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape
+            android:shape="oval">
+            <solid android:color="@color/bthumbnail_background" />
+        </shape>
+    </item>
+
+</selector><!-- From: file:/C:/Users/user/Copy/Home/Public/PrototypeApp/AndroidBootstrap/res/drawable/thumbnail_circle_minimal.xml --><!-- From: file:/C:/Users/user/Copy/Home/Public/PrototypeApp/AndroidBootstrap/build/intermediates/bundles/debug/res/drawable/thumbnail_circle_minimal.xml -->

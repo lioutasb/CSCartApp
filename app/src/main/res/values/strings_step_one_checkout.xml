@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="step_one_screen_title">Βήμα 1 - Διεύθυνση Αποστολής</string>
+    <string name="step_one_next_btn">Επόμενο</string>
+</resources>

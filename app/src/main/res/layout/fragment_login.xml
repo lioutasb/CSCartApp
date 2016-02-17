@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bootstrap="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <RelativeLayout
+            android:id="@+id/edittexts_rel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.beardedhen.androidbootstrap.BootstrapEditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:singleLine="true"
+                android:hint="Email"
+                bootstrap:be_roundedCorners="true"
+                bootstrap:be_state="info"/>
+
+            <View
+                android:id="@+id/emptyView"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_below="@+id/email"/>
+
+            <com.beardedhen.androidbootstrap.BootstrapEditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:layout_below="@+id/emptyView"
+                android:singleLine="true"
+                android:hint="@string/login_hint_password"
+                bootstrap:be_roundedCorners="true"
+                bootstrap:be_state="info"/>
+        </RelativeLayout>
+
+        <CheckBox
+            android:id="@+id/showPass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edittexts_rel"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:text="@string/login_btn_show_pass"/>
+
+        <TextView
+            android:id="@+id/passRecovery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:padding="10dp"
+            android:text="@string/login_btn_pass_recovery"
+            android:clickable="true"
+            android:background="@drawable/selector_txt_black_bg"
+            android:layout_below="@+id/showPass"/>
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/login_btn_login"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:layout_below="@+id/passRecovery"
+            bootstrap:bb_icon_left="fa-sign-in"
+            bootstrap:bb_type="primary"
+            bootstrap:bb_roundedCorners="true"
+            bootstrap:bb_size="normal"/>
+
+    </RelativeLayout>
+</ScrollView>

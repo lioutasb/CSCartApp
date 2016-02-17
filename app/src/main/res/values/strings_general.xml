@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string translatable="false" name="store_name">CSCartEshop</string>
+    <string translatable="false" name="store_site">eshop-site.com</string>
+    <string translatable="false" name="store_phone">21234-56789</string>
+    <string translatable="false" name="auth_host">http://www.eshop-site.com</string>
+    <string translatable="false" name="default_language_code">el</string>
+    <string translatable="false" name="default_currency_code">EUR</string>
+    
+    <string-array translatable="false" name="app_available_languages">
+        <item>el</item>
+        <item>en</item>
+    </string-array>
+</resources>

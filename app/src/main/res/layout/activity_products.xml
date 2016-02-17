@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include android:id="@+id/action_bar"
+        layout="@layout/toolbar"/>
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/nav_drawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/action_bar">
+
+        <RelativeLayout
+            android:id="@+id/content_frame"
+            android:background="@color/gray"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ListView
+                android:id="@+id/list_products"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <include android:id="@+id/sticky"
+                layout="@layout/list_header_view_products"/>
+
+            <gr.plushost.prototypeapp.widgets.FloatingActionButton
+                xmlns:fab="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/fabButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/arrow_up_small_white"
+                android:layout_margin="16dp"
+                fab:fab_colorNormal="#009933"
+                fab:fab_colorPressed="@color/very_dark_grey"
+                fab:fab_colorRipple="@color/dark_light_grey"
+                android:onClick="goUpButton"/>
+
+            <ProgressBar
+                android:id="@+id/progressBarLoading"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminateDrawable="@drawable/progress_blue"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:visibility="gone"/>
+
+            <tr.xip.errorview.ErrorView
+                xmlns:errorview="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/error_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:visibility="gone"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                errorview:ev_title="@string/oopsTxt"
+                errorview:ev_showRetryButton="false"/>
+
+
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/nav_drawer_fragment"
+            android:layout_width="@dimen/nav_drawer_size"
+            android:layout_height="match_parent"
+            android:layout_gravity="start" />
+
+    </android.support.v4.widget.DrawerLayout>
+</RelativeLayout>

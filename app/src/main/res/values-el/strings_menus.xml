@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="menu_cart_refresh">Ανανέωση</string>
+    <string name="menu_cart_empty">Άδειασμα Καλαθιού</string>
+
+    <string name="menu_cart_item_qty">Αλλαγή Ποσότητας</string>
+    <string name="menu_cart_item_remove">Αφαίρεση</string>
+
+    <string name="menu_cart_name">Καλάθι</string>
+    <string name="menu_share_name">Κοινοποίηση</string>
+    <string name="menu_search_name">Αναζήτηση</string>
+    <string name="menu_settings_name">Ρυθμίσεις</string>
+
+    <string name="menu_compare_name">ΣΥΓΚΡΙΝΕ</string>
+
+</resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="not_internet_title">Network Problem</string>
+    <string name="not_internet_msg">There is no active Internet connection. Please configure your network correctly.</string>
+    <string name="not_internet_settings_btn">Settings</string>
+    <string name="not_internet_ok_btn">OK</string>
+    <string name="search_text_on_box">Search in %s</string>
+    <string name="back_toast_warning_msg">Press Back again to quit</string>
+    <string name="search_hint">Search in %s</string>
+
+    <string name="btn_txt_1">Αποστολή &amp; Παράδοση</string>
+    <string name="btn_txt_2">Επιστροφές - Ανταλλαγές</string>
+    <string name="btn_txt_3">Τρόποι πληρωμής</string>
+    <string name="btn_txt_4">Αναζήτηση δέματος</string>
+    <string name="btn_txt_5">Contact us</string>
+
+
+    <string name="txt_phone_title">Customer Service:</string>
+    <string name="txt_store_hours_title">Mon-Fri: 8:30 - 14:30, 18:00 - 22:00\nSat: 8:30 - 14:30</string>
+    <string name="txt_btn_terms">Terms and Conditions</string>
+    <string name="txt_btn_privacy">Privacy policy</string>
+
+    <string name="txt_freeship_title">FREE SHIPPING</string>
+    <string name="txt_freeship_body">Orders %s and up.</string>
+
+    <string name="txt_categories_promotion">Categories:</string>
+</resources>

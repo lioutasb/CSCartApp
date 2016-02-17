@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="step_two_screen_title">Βήμα 2 - Τρόπος Αποστολής</string>
+    <string name="step_two_method_title">Διάλεξε Τρόπο Αποστολής:</string>
+    <string name="step_two_next_btn">Επόμενο</string>
+    <string name="step_two_comments_title">Μπορείτε να μας αφήσετε ένα σχόλιο εδώ</string>
+    <string name="step_two_additional_info">Ο χρόνος παράδοσης υπολογίζεται σε 1 με 2 εργάσιμες ημέρες.\n\n
+Τα Προϊόντα σε απόθεμα αποστέλονται μετά τον έλεγχο της πληρωμής.\n\n
+Παρακαλούμε, ανοίξτε το πακέτο που παραδίδεται σύμφωνα με την παραγγελία σας τη στιγμή που θα το παραλάβετε. Εάν ανακαλύψετε οποιαδήποτε ζημία, δεν ευθυνόμαστε εμείς αλλά η υπηρεσία μεταφορών</string>
+
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="login_invalid_email_msg">Invalid e-mail</string>
+    <string name="login_password_empty_msg">The password can not be empty</string>
+    <string name="login_fail_msg">The e-mail address or password you entered was incorrect. Try again!</string>
+    <string name="login_success_msg">Successful Login</string>
+    <string name="login_tab_title">Sign in</string>
+    <string name="login_screen_title">Sign in</string>
+    <string name="login_btn_login">Sign in</string>
+    <string name="login_btn_pass_recovery">Forgot your password?</string>
+    <string name="login_btn_show_pass">Show password</string>
+    <string name="login_hint_password">Password</string>
+
+</resources>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:summary=""
+        android:title="@string/settings_general_group_name" >
+        <Preference
+            android:key="language"
+            android:title="@string/settings_lang_item_name"/>
+
+        <Preference
+            android:key="currency"
+            android:title="@string/settings_currency_item_name"/>
+
+        <Preference
+            android:key="search_history"
+            android:title="@string/settings_search_history_item_name"
+            android:summary="@string/settings_search_history_item_desc"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:summary=""
+        android:title="@string/settings_help_group_name" >
+
+        <Preference
+            android:key="intro_screen"
+            android:summary="@string/settings_intro_item_desc"
+            android:title="@string/settings_intro_item_name" />
+
+        <Preference
+            android:key="feedback"
+            android:summary="@string/settings_feedback_item_desc"
+            android:title="@string/settings_feedback_item_name" />
+
+        <Preference
+            android:key="open_libs"
+            android:title="@string/settings_openlibs_item_name" />
+
+        <Preference
+            android:key="about"
+            android:summary=""
+            android:title="@string/settings_about_item_name" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

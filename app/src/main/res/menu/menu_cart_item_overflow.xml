@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/qtyChange"
+        android:title="@string/menu_cart_item_qty"/>
+    <item android:id="@+id/removeItem"
+        android:title="@string/menu_cart_item_remove"/>
+</menu>

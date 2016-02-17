@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff">
+
+    <RelativeLayout
+        android:id="@+id/webContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+
+        <ImageView
+            android:id="@+id/eltaimg"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"/>
+
+        <TextView
+            android:id="@+id/elta_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/eltaimg"
+            android:paddingTop="5dp"
+            android:text="Για να εντοπίσετε το δέμα της παραγγελίας σας εισάγετε τον κωδικό του δέματος για το οποίο θέλετε να γίνει η αναζήτηση.\n\nΟ κωδικός έχει 13 στοιχεία (2 λατινικά γράμματα ακολουθούμενα από 9 νούμερα και 2 λατινικά γράμματα) πχ PD000000005GR."/>
+
+        <TextView
+            android:id="@+id/elta_desc2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/elta_desc"
+            android:paddingBottom="5dp"
+            android:autoLink="phone"
+            android:text="\nΓια οποιοδήποτε πρόβλημα επικοινωνήστε με το Τμήμα Εξυπηρέτησης Πελατών στο 801-11-90-200."/>
+
+        <RelativeLayout
+            android:id="@+id/lay_textNbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/elta_desc2"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="10dp">
+
+            <EditText
+                android:id="@+id/elta_text"
+                android:layout_width="165dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:hint="π.χ. PD000000005GR"
+                android:textSize="15sp"
+                android:lines="1"
+                android:inputType="textNoSuggestions" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Αναζήτηση"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/elta_text"
+                android:onClick="searchTrace"/>
+        </RelativeLayout>
+
+        <ProgressBar
+            android:id="@+id/pbElta"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lay_textNbtn"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"/>
+
+        <WebView
+            android:id="@+id/webRes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lay_textNbtn"/>
+
+    </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
