@@ -5,7 +5,7 @@
 
 Android Application framework compatible with CS-Cart 4.x.
 
-It was made in order to work well with demo CS-Cart. Some features may not work well althought because of this version uploaded was fitted on a custom CS-Cart installation.
+It was made in order to work with CS-Cart demo. Some features may not work well or work at all because this version that uploaded was fitted in a custom CS-Cart installation.
 
 In order to work you need to install also [CSCartAPI](https://github.com/lioutasb/CSCartAPI).
 
